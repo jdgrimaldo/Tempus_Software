@@ -9,6 +9,7 @@ body {
     box-sizing: border-box;
 }
 .contenedor{
+    background: #fff;
     width: 100%;
     padding: 15px;
 }

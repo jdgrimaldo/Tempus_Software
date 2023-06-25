@@ -1,2 +1,2 @@
-# Tempus_Software
+# Proyecto Tempus Software and Hardware
 Pagina Proyecto

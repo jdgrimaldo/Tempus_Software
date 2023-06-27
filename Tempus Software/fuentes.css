@@ -2,27 +2,27 @@
 /*AREA DE INSERTAR FUENTES*/
 /*-----------------------*/
 @font-face {
-    font-family: Righteous-Regular;
-    src: url(fuentes/Righteous-Regular.ttf);
+  font-family: Righteous-Regular;
+  src: url(fuentes/Righteous-Regular.ttf);
 }
 
 @font-face {
-    font-family: PermanentMarker-Regular;
-    src: url(fuentes/PermanentMarker-Regular.ttf);
+  font-family: PermanentMarker-Regular;
+  src: url(fuentes/PermanentMarker-Regular.ttf);
 }
 
 @font-face {
-    src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/Anders.ttf');
-    font-family: test;
+  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/Anders.ttf");
+  font-family: test;
 }
 
 @font-face {
-    font-family: Alegreya;
-    src: url(fuentes/Alegreya.ttf);
+  font-family: Alegreya;
+  src: url(fuentes/Alegreya.ttf);
 }
 
 h2 {
-    text-decoration: none;
-    font-size: 20px;
-    color: black;
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
 }

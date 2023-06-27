@@ -2,45 +2,44 @@
 /*Area de Body y Funcionalidad para Moviles*/
 /*----------------------------------------*/
 
-body 
-{
+body {
     width: 100%;
     height: 100%;
 }
 
-img
-{
-    max-width:100%;
+img {
+    max-width: 100%;
 }
 
 @media screen and (min-width:300px) and (max-width:800px) {
-    body
-    {font-size:0.8em;}
-    sidebar{display:none;}
+    body {
+        font-size: 0.8em;
     }
+
+    sidebar {
+        display: none;
+    }
+}
 
 
 /*----------------------------*/
 /*Area de Efectos Menu y Logo*/
 /*--------------------------*/
 
-img:hover 
-{
+img:hover {
     filter: opacity(.9);
 }
 
-.navegador a:hover  
-{
-    -webkit-transform:scale(1.3);transform:scale(1.3);
+.navegador a:hover {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
 }
 
-.logo:hover 
-{
+.logo:hover {
     filter: blur(3px);
 }
 
-.magic a:hover  
-{
+.magic a:hover {
     filter: opacity(.4);
 }
 
@@ -48,8 +47,7 @@ img:hover
 /*Area de la Barra de Navegacion*/
 /*-----------------------------*/
 
-*
-{
+* {
     margin: 0;
     padding: 0;
 }
@@ -72,26 +70,23 @@ img:hover
     cursor: pointer;
 }
 
-ul 
-{
+ul {
     list-style-type: none;
     font-size: 16px;
     overflow: hidden;
     margin: 0;
     text-align: center;
-    padding: 0;  
+    padding: 0;
     font-family: Alegreya;
-    float: right; 
+    float: right;
 }
 
-li 
-{
+li {
     float: right;
     font-family: Alegreya;
 }
 
-li a
-{
+li a {
     text-decoration: none;
     color: rgba(252, 252, 252, 0.877);
     padding: 19px;
@@ -99,26 +94,22 @@ li a
     font-family: Alegreya;
 }
 
-li a:hover
-{
+li a:hover {
     color: rgba(202, 30, 73, 0.877);
 }
 
-.mostrar
-{
+.mostrar {
     position: absolute;
     overflow: hidden;
     display: none;
 }
 
-.accion:hover .mostrar
-{
+.accion:hover .mostrar {
     display: block;
 }
 
 
-.articulos 
-{
+.articulos {
     display: inline-block;
     vertical-align: top;
     font-family: Alegreya;
@@ -131,50 +122,65 @@ li a:hover
 /*-------------------------*/
 
 
-.slider 
-{
+.slider {
     max-width: 100%;
     height: 590px;
     position: initial;
     display: flex;
 }
 
-.slider ul 
-{
+.slider ul {
     display: flex;
-	width: 400%;
+    width: 400%;
     position: absolute;
     text-align: center;
     animation: slide 20s infinite;
 }
 
-.slider li 
-{
-	width: 100%;
-	list-style: none;
+.slider li {
+    width: 100%;
+    list-style: none;
 }
 
-@keyframes slide 
-{
-	0% {margin-left: 0;}
-	25% {margin-left: 0;}
-	
-	26% {margin-left: -100%;}
-	50% {margin-left: -100%;}
-	
-	51% {margin-left: -200%;}
-	75% {margin-left: -200%;}
+@keyframes slide {
+    0% {
+        margin-left: 0;
+    }
 
-    76% {margin-left: -300%;}
-	100% {margin-left: -300%;}
+    25% {
+        margin-left: 0;
+    }
+
+    26% {
+        margin-left: -100%;
+    }
+
+    50% {
+        margin-left: -100%;
+    }
+
+    51% {
+        margin-left: -200%;
+    }
+
+    75% {
+        margin-left: -200%;
+    }
+
+    76% {
+        margin-left: -300%;
+    }
+
+    100% {
+        margin-left: -300%;
+    }
 }
 
 /*-------------------------*/
 /*Area de Slider Contenido*/
 /*-----------------------*/
 
-.contenedor
-{
+.contenedor {
     position: relative;
     padding: 10%;
     width: 100%;
@@ -186,8 +192,7 @@ li a:hover
     background-repeat: no-repeat;
 }
 
-.contenedor2
-{
+.contenedor2 {
     position: relative;
     padding: 10%;
     width: 100%;
@@ -199,8 +204,7 @@ li a:hover
     background-repeat: no-repeat;
 }
 
-.contenedor3
-{
+.contenedor3 {
     position: relative;
     padding: 10%;
     width: 100%;
@@ -212,8 +216,7 @@ li a:hover
     background-repeat: no-repeat;
 }
 
-.contenedor4
-{
+.contenedor4 {
     position: relative;
     padding: 10%;
     width: 100%;
@@ -225,8 +228,7 @@ li a:hover
     background-repeat: no-repeat;
 }
 
-.contenedor h2
-{
+.contenedor h2 {
     position: relative;
     text-align: center;
     font-family: test;
@@ -234,8 +236,9 @@ li a:hover
     font-size: 42px;
 }
 
-.contenedor2 h2, .contenedor3 h2 , .contenedor4 h2
-{
+.contenedor2 h2,
+.contenedor3 h2,
+.contenedor4 h2 {
     position: relative;
     text-align: center;
     font-family: test;
@@ -243,8 +246,10 @@ li a:hover
     font-size: 37px;
 }
 
-.contenedor h3, .contenedor2 a, .contenedor3 a, .contenedor4 a
-{
+.contenedor h3,
+.contenedor2 a,
+.contenedor3 a,
+.contenedor4 a {
     position: relative;
     text-decoration: none;
     text-align: center;
@@ -259,8 +264,7 @@ li a:hover
 /*Area de Presentacion de pagina*/
 /*-----------------------------*/
 
-.presentacion
-{
+.presentacion {
     position: relative;
     padding: 15%;
     text-align: center;
@@ -272,8 +276,8 @@ li a:hover
     background-position: center;
     background-repeat: no-repeat;
 }
-.presentacion2
-{
+
+.presentacion2 {
     position: relative;
     padding: 15%;
     text-align: center;
@@ -287,28 +291,26 @@ li a:hover
 }
 
 
-.presentacion h1 , .presentacion2 h1 
-{
+.presentacion h1,
+.presentacion2 h1 {
     position: relative;
     font-size: 50px;
     font-family: test;
     color: #fff;
 }
 
-.texto-presentacion a
-{
+.texto-presentacion a {
     text-decoration: none;
     text-align: center;
     color: #fff;
     font-size: 30px;
 }
 
-.magic 
-{
+.magic {
     font-size: 26px;
 }
-.magic a
-{
+
+.magic a {
     text-decoration: none;
 }
 
@@ -318,7 +320,8 @@ li a:hover
 /*----------------------*/
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -327,40 +330,46 @@ li a:hover
     z-index: 10;
 }
 
-.pie-pagina{
+.pie-pagina {
     width: 100%;
     background-color: #0a141d;
 }
-.pie-pagina .grupo-1{
+
+.pie-pagina .grupo-1 {
     width: 100%;
     max-width: 1200px;
     margin: auto;
-    display:grid;
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap:50px;
+    grid-gap: 50px;
     padding: 45px 0px;
 }
-.pie-pagina .grupo-1 .box figure{
+
+.pie-pagina .grupo-1 .box figure {
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.pie-pagina .grupo-1 .box figure img{
+
+.pie-pagina .grupo-1 .box figure img {
     width: 250px;
 }
-.pie-pagina .grupo-1 .box h2{
+
+.pie-pagina .grupo-1 .box h2 {
     color: #fff;
     margin-bottom: 25px;
     font-size: 35px;
 }
-.pie-pagina .grupo-1 .box p{
+
+.pie-pagina .grupo-1 .box p {
     color: #efefef;
     font-size: 20px;
     margin-bottom: 10px;
 }
-.pie-pagina .grupo-1 .red-social a{
+
+.pie-pagina .grupo-1 .red-social a {
     display: inline-block;
     text-decoration: none;
     width: 45px;
@@ -372,29 +381,32 @@ li a:hover
     text-align: center;
     transition: all 300ms ease;
 }
-.pie-pagina .grupo-1 .red-social a:hover{
+
+.pie-pagina .grupo-1 .red-social a:hover {
     color: rgba(202, 30, 73, 0.877);
 }
-.pie-pagina .grupo-2{
+
+.pie-pagina .grupo-2 {
     background-color: #0a1a2a;
     padding: 15px 10px;
     text-align: center;
     color: #fff;
 }
-.pie-pagina .grupo-2 small{
+
+.pie-pagina .grupo-2 small {
     font-size: 15px;
 }
-@media screen and (max-width:800px){
-    .pie-pagina .grupo-1{
+
+@media screen and (max-width:800px) {
+    .pie-pagina .grupo-1 {
         width: 90%;
         grid-template-columns: repeat(1, 1fr);
-        grid-gap:30px;
+        grid-gap: 30px;
         padding: 35px 0px;
     }
 }
 
-.horarios
-{
+.horarios {
     display: flex;
     color: #fff;
 }

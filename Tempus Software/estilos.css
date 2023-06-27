@@ -54,20 +54,21 @@ img:hover {
 /*------------------------------------------------------------------------------------------------------------*/
 .navegador {
   width: 100%;
-  height: 120px;
-  padding: 14px;
-  background-color: #0d2033;
+  height: 540px;
+  padding: 16px;
+  background-image: url(imagenes/laptos/lapto5.jpg);
   background-position: center;
   background-repeat: no-repeat;
 }
 .logo {
   width: 190px;
+  padding: 18px;
   cursor: pointer;
 }
 
 ul {
   list-style-type: none;
-  font-size: 16px;
+  font-size: 13px;
   overflow: hidden;
   margin: 0;
   text-align: center;
@@ -84,7 +85,7 @@ li {
 li a {
   text-decoration: none;
   color: rgba(252, 252, 252, 0.877);
-  padding: 19px;
+  padding: 20px;
   display: flex;
   font-family: Alegreya;
 }
@@ -255,7 +256,7 @@ li a:hover {
   position: relative;
   padding: 15%;
   text-align: center;
-  background: #0a141d;
+  background: #fff;
   width: 100%;
   height: 650px;
   background-image: url(imagenes/laptos/lapto5.jpg);
@@ -268,7 +269,7 @@ li a:hover {
   position: relative;
   padding: 15%;
   text-align: center;
-  background: #0a141d;
+  background: #fff;
   width: 100%;
   height: 650px;
   background-image: url(imagenes/laptos/lapto9.jpg);
@@ -310,13 +311,13 @@ li a:hover {
   padding: 0;
   box-sizing: border-box;
   font-family: Alegreya;
-  color: #fff;
+  color: #bac8d3;
   z-index: 10;
 }
 
 .pie-pagina {
   width: 100%;
-  background-color: #0a141d;
+  background-color: #1d262d;
 }
 
 .pie-pagina .grupo-1 {
@@ -331,7 +332,6 @@ li a:hover {
 
 .pie-pagina .grupo-1 .box figure {
   width: 100%;
-  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -342,13 +342,13 @@ li a:hover {
 }
 
 .pie-pagina .grupo-1 .box h2 {
-  color: #fff;
+  color: #bac8d3;
   margin-bottom: 25px;
   font-size: 35px;
 }
 
 .pie-pagina .grupo-1 .box p {
-  color: #efefef;
+  color: #bac8d3;
   font-size: 20px;
   margin-bottom: 10px;
 }
@@ -359,9 +359,8 @@ li a:hover {
   width: 45px;
   height: 45px;
   line-height: 45px;
-  color: #fff;
+  color: #bac8d3;
   margin-right: 10px;
-  background-color: #0d2033;
   text-align: center;
   transition: all 300ms ease;
 }
@@ -371,10 +370,10 @@ li a:hover {
 }
 
 .pie-pagina .grupo-2 {
-  background-color: #0a1a2a;
   padding: 15px 10px;
   text-align: center;
-  color: #fff;
+  color: #bac8d3;
+   border-top: 1px solid #374957;
 }
 
 .pie-pagina .grupo-2 small {
@@ -390,7 +389,29 @@ li a:hover {
   }
 }
 
-.horarios {
+.box .horarios {
   display: flex;
-  color: #fff;
+  color: #bac8d3;
+  text-align: center;
+}
+
+.box .horarios p{
+  padding: 8px;
+  display: flex;
+  text-align: center;
+}
+
+.ubicacion {
+  text-decoration: none;
+}
+
+.ubicacion a {
+  text-decoration: none;
+  width: 45px;
+  text-align: center;
+  transition: all 300ms ease;
+}
+
+.ubicacion a:hover {
+  color: rgba(202, 30, 73, 0.877);
 }

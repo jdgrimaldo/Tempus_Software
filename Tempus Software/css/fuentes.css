@@ -21,6 +21,11 @@
   src: url(/fuentes/Alegreya.ttf);
 }
 
+@font-face {
+  font-family: PressStart2P-Regular;
+  src: url(/fuentes/PressStart2P-Regular.ttf);
+}
+
 h2 {
   text-decoration: none;
   font-size: 20px;

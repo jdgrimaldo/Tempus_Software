@@ -8,38 +8,38 @@
   <meta name="viewport"
     content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
   <title>Tempus Software</title>
-  <link rel="stylesheet" type="text/css" href="estilos/estilos.css" />
-  <link rel="stylesheet" type="text/css" href="estilos/fuentes.css" />
+  <link rel="stylesheet" type="text/css" href="css/estilos.css" />
+  <link rel="stylesheet" type="text/css" href="css/fuentes.css" />
   <link rel="stylesheet" href="iconos/fontawesome/css/all.css">
 </head>
 
 <body>
   <header>
-    <nav>
-      <div class="navegador">
-        <a href="index.html"><img src="imagenes/fondo pagina.png" class="logo" alt="Main Logo" /></a>
+    <div class="logo">
+        <a href="">Tempus Software</a>
+    </div>
+    <nav id="menu">
         <ul>
-          <li><a class="fa fa-user-circle" href="login.html"> Log In</a></li>
-          <li>
-            <a class="fa fa-gift" href="accesorios.html"> Accesorios</a>
-          </li>
-          <li>
-            <a class="fa fa-suitcase" href="componentes.html"> Componentes</a>
-          </li>
-          <li class="accion">
-            <a class="fa-solid fa-shop" href=""> Ventas</a>
-            <div class="mostrar">
-              <a class="fa fa-desktop" href="laptos nuevas.html">
-                Laptos Nuevas</a>
-              <a class="fa fa-laptop" href="laptos usadas.html">
-                Laptos Usadas</a>
-            </div>
-          </li>
-          <li><a class="fa fa-home fa-2x" href="index.html"></a></li>
+            <li><a href="index.html">Inicio</a></li>
+            <li class="accion">
+              <a class="" href=""> Ventas</a>
+              <div class="mostrar">
+                <a class="" href="laptos nuevas.html">
+                  Laptos Nuevas</a>
+                <a class="" href="laptos usadas.html">
+                  Laptos Usadas</a>
+              </div>
+            </li>
+            <li><a href="accesorios.html">Accesorios</a></li>
+            <li><a href="componentes.html">Componenetes</a></li>
+            <li><a href="login/login.html">Login</a></li>
         </ul>
-      </div>
     </nav>
-  </header>
+    <div class="menu-toggle">
+        <i class="fa fa-bars"></i>
+    </div>
+</header>
+
   <main>
     <section>
       <div class="slider">
@@ -149,6 +149,7 @@
         Reservados.</small>
     </div>
   </footer>
+  <script src="js/acciones.js"></script>
 </body>
 
 </html>

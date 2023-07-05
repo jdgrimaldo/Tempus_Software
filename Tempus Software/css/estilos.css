@@ -45,54 +45,106 @@ img:hover {
 /*Area de la Barra de Navegacion*/
 /*-----------------------------*/
 
-* {
-  margin: 0;
-  padding: 0;
-}
-/*--------------------------------------------------------------------------------------------------------------*/
-/*NOTA A QUE SOLUCIONAR EL HEIGHT OSEA EL ALTO DE LA BARRA DE NAEGACION YA QUE NO DEJA PARA MOVILES OJO CON ESO*/
-/*------------------------------------------------------------------------------------------------------------*/
-.navegador {
-  width: 100%;
-  height: 540px;
-  padding: 16px;
-  background-image: url(/imagenes/laptos/lapto5.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.logo {
-  width: 190px;
-  padding: 18px;
-  cursor: pointer;
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-ul {
-  list-style-type: none;
-  font-size: 13px;
-  overflow: hidden;
-  margin: 0;
-  text-align: center;
-  padding: 0;
-  font-family: Alegreya;
-  float: right;
+header
+{
+    height: 70px;
+    background: #5f5fd3;
+    display: flex;
+    padding: 0 20px;
 }
 
-li {
-  float: right;
-  font-family: Alegreya;
+.menu-toggle
+{
+    display: none;
+    margin-left: auto;
+    color: #fff;
+    line-height: 70px;
+    font-size: 25px;
+    cursor: pointer;
 }
 
-li a {
-  text-decoration: none;
-  color: rgba(252, 252, 252, 0.877);
-  padding: 20px;
-  display: flex;
-  font-family: Alegreya;
+.logo a
+{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 70px;
+    text-transform: uppercase;
+    font-family: PressStart2P-Regular,cursive;
 }
 
-li a:hover {
-  color: rgba(202, 30, 73, 0.877);
+#menu
+{
+    margin-left: auto;
 }
+
+#menu ul li 
+{
+    display: inline-block;
+}
+
+#menu ul li a 
+{
+    display: inline-block;
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    line-height: 70px;
+    padding: 0 8px;
+    text-transform: uppercase;
+    transition: .2s;
+}
+
+#menu ul li a:hover
+{
+    background: #7272e3;
+}
+
+.show
+{
+    height: 305px !important;
+}
+
+@media screen and (max-width:700px) {
+    .menu-toggle{
+        display: block;
+    }
+
+    #menu{
+        background: #7272e0;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+        transition: .3s ease-out;
+    }
+
+    #menu ul li{
+        display: block;
+        text-align: center;
+    }
+
+    #menu ul li a{
+        color: #fff;
+        font-size: 20px;
+        border-bottom: 1px solid #5f5fd3;
+        width: 100%;
+    }
+
+    #menu ul li a:hover{
+        background: #5959b8;
+    }
+}
+
 
 .mostrar {
   position: absolute;
@@ -104,12 +156,7 @@ li a:hover {
   display: block;
 }
 
-.articulos {
-  display: inline-block;
-  vertical-align: top;
-  font-family: Alegreya;
-  font-size: 12px;
-}
+
 /*---------------------------*/
 /*Area del Slider Automatico*/
 /*-------------------------*/
@@ -119,6 +166,7 @@ li a:hover {
   height: 590px;
   position: initial;
   display: flex;
+  margin: auto;
 }
 
 .slider ul {

@@ -1,7 +1,7 @@
 body {
   font-family: Righteous-Regular;
   margin: 0;
-  background: url(/imagenes/fondo2.png);
+  background: url(../imagenes/fondo2.png);
   background-size: cover;
   background-attachment: fixed;
 }

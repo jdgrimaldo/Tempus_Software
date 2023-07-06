@@ -225,7 +225,7 @@ header
   width: 100%;
   height: 590px;
   text-align: center;
-  background-image: url(/imagenes/fondo\ local.jpg);
+  background-image: url(../imagenes/fondo\ local.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -237,7 +237,7 @@ header
   width: 100%;
   height: 590px;
   text-align: center;
-  background-image: url(/imagenes/laptos/lapto4.jpg);
+  background-image: url(../imagenes/laptos/lapto4.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -249,7 +249,7 @@ header
   width: 100%;
   height: 590px;
   text-align: center;
-  background-image: url(/imagenes/componentes/componentes2.jpg);
+  background-image: url(../imagenes/componentes/componentes2.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -261,7 +261,7 @@ header
   width: 100%;
   height: 590px;
   text-align: center;
-  background-image: url(/imagenes/accesorios/accesorios4.jpg);
+  background-image: url(../imagenes/accesorios/accesorios4.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -307,7 +307,7 @@ header
   background: #fff;
   width: 100%;
   height: 650px;
-  background-image: url(/imagenes/laptos/lapto5.jpg);
+  background-image: url(../imagenes/laptos/lapto5.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -320,7 +320,7 @@ header
   background: #fff;
   width: 100%;
   height: 650px;
-  background-image: url(/imagenes/laptos/lapto9.jpg);
+  background-image: url(../imagenes/laptos/lapto9.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

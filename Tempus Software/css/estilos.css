@@ -29,9 +29,10 @@ img:hover {
   filter: opacity(0.9);
 }
 
-.navegador a:hover {
+.slider li a:hover {
   -webkit-transform: scale(1.3);
   transform: scale(1.3);
+  color: rgba(202, 30, 73, 0.877);
 }
 
 .logo:hover {

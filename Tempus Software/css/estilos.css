@@ -362,7 +362,8 @@ footer{
 @media screen and (max-width:500px){
   nav{
       text-align: center;
-      padding: 30px 0 0 0;
+      padding: 98px 0 0 0;
+      font-size: 7px;
   }
 
   nav > a{
@@ -371,6 +372,7 @@ footer{
 
   .textos-header h1{
       font-size: 35px;
+      padding: 4px;
   }
 
   .textos-header h2{

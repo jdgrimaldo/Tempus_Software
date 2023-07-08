@@ -47,16 +47,17 @@ img {
 /*---------------------*/
 
 .slider li a:hover {
-  -webkit-transform: scale(1.3);
+  -webkit-transform: scale(5.3);
   transform: scale(1.3);
   color: rgba(202, 30, 73, 0.877);
+  
 }
 
 nav > a:hover {
-  -webkit-transform: scale(1.3);
+  -webkit-transform: scale(5.3);
   transform: scale(1.3);
   color: rgba(202, 30, 73, 0.877);
-  padding: 3px;
+  padding: 17px;
 }
 
 .logo a img:hover {

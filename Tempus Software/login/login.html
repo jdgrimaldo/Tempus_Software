@@ -10,40 +10,52 @@
     <title>Tempus Software</title>
     <link rel="stylesheet" type="text/css" href="../css/estilos.css" />
     <link rel="stylesheet" type="text/css" href="../css/fuentes.css" />
-    <link rel="stylesheet" href="registro.html" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="estilo_log_reg.css" />
-    <link rel="stylesheet" href="../iconos/fontawesome/css/all.css">
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"/>
   </head>
 
   <body>
-    <form class="formulario">
-      <h1>Login</h1>
-      <div class="contenedor">
-        <div class="input-contenedor">
-          <i class="fas fa-envelope icon"></i>
-          <input type="text" placeholder="Correo Electronico" />
-        </div>
-        <div class="input-contenedor">
-          <i class="fas fa-key icon"></i>
-          <input type="password" placeholder="Contraseña" />
-        </div>
-        <input type="submit" value="Login" class="button" />
-        <p>
-          Al registrarte, aceptas nuestras Condiciones de uso y Política de
-          privacidad.
-        </p>
-        <p>
-          ¿No tienes una cuenta?
-          <a class="link" href="registro.html">Registrate </a>
-        </p>
+    <main>
+
+      <div class="contenedor__todo">
+          <div class="caja__trasera">
+              <div class="caja__trasera-login">
+                  <h3>¿Ya tienes una cuenta?</h3>
+                  <p>Inicia sesión para entrar en la página</p>
+                  <button id="btn__iniciar-sesion">Iniciar Sesión</button>
+              </div>
+              <div class="caja__trasera-register">
+                  <h3>¿Aún no tienes una cuenta?</h3>
+                  <p>Regístrate para que puedas iniciar sesión</p>
+                  <button id="btn__registrarse">Regístrarse</button>
+              </div>
+          </div>
+
+          <!--Formulario de Login y registro-->
+          <div class="contenedor__login-register">
+              <!--Login-->
+              <form action="" class="formulario__login">
+                  <h2>Inicia Sesión</h2>
+                  <input type="text" placeholder="Correo Electronico">
+                  <input type="password" placeholder="Contraseña">
+                  <button>Entrar</button>
+              </form>
+
+              <!--Register-->
+              <form action="" class="formulario__register">
+                  <h2>Regístrate</h2>
+                  <input type="text" placeholder="Nombre completo">
+                  <input type="text" placeholder="Correo Electronico">
+                  <input type="text" placeholder="Usuario">
+                  <input type="password" placeholder="Contraseña">
+                  <button>Regístrarse</button>
+              </form>
+          </div>
       </div>
-    </form>
+
+  </main>
+
+  <script src="main.js"></script>
 <br><br><br>
 <footer>
   <div class="contenedor-footer">

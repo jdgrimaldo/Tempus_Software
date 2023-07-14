@@ -12,6 +12,8 @@
     <link rel="stylesheet" type="text/css" href="../css/fuentes.css" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="estilo_log_reg.css" />
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+	  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
   </head>
 
   <body>
@@ -34,7 +36,7 @@
           <!--Formulario de Login y registro-->
           <div class="contenedor__login-register">
               <!--Login-->
-              <form action="" class="formulario__login">
+              <form action="" class="formulario__login" id="formulario__login">
                   <h2>Inicia Sesión</h2>
                   <input type="text" placeholder="Correo Electronico">
                   <input type="password" placeholder="Contraseña">
@@ -42,13 +44,66 @@
               </form>
 
               <!--Register-->
-              <form action="" class="formulario__register">
+              <form action="" class="formulario__register" id="formulario__register">
                   <h2>Regístrate</h2>
-                  <input type="text" placeholder="Nombre completo">
-                  <input type="text" placeholder="Correo Electronico">
-                  <input type="text" placeholder="Usuario">
-                  <input type="password" placeholder="Contraseña">
-                  <button>Regístrarse</button>
+
+                  <!--Grupo Nombre-->
+                  <div class="formulario__grupo" id="grupo__nombre">
+                    
+                    <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Nombre completo">
+                    <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+                    </div>
+                    <p class="formulario__input-error">El nombre solo puede contener letras y espacios</p>
+                  </div>
+                  
+                  <!--Grupo Correo-->
+                  <div class="formulario__grupo" id="grupo__correo">
+                    
+                    <div class="formulario__grupo-input">
+                    <input type="email" class="formulario__input" name="correo" id="correo" placeholder="Correo Electronico">
+                    <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+                    </div>
+                    <p class="formulario__input-error">El correo solo puede contener letras, numeros, guiones, guiones bajos y puntos</p>
+                  </div>
+
+                  <!--Grupo Usuario-->
+                  <div class="formulario__grupo" id="grupo__usuario">
+                    
+                    <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="usuario" id="usuario" placeholder="Usuario">
+                    <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+                    </div>
+                    <p class="formulario__input-error">El usuario debe ser de 4 a 16 letras y solo debe contener numeros, letras y guion bajo.</p>
+                  </div>
+
+                  <!--Grupo Contraseña-->
+                  <div class="formulario__grupo" id="grupo__password">
+                    
+                    <div class="formulario__grupo-input">
+                    <input type="password" class="formulario__input" name="password" id="password" placeholder="Contraseña">
+                    <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+                    </div>
+                    <p class="formulario__input-error">La contraseña tiene que ser de 4 a 12 digitos</p>
+                  </div>
+
+                  <!--Grupo para terminos y condiciones-->
+                  <div class="formulario__grupo" id="grupo__terminos">
+                    <label class="formulario__label">
+                      <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+                      <center>Acepto los terminos y condiciones</center>
+                    </label>
+                  </div>
+
+                  <div class="formulario__mensaje" id="formulario__mensaje">
+                    <p><i class="fa-solid fa-triangle-exclamation"></i> <b>Error:</b> Por favor rellene el formulario correctamente</p>
+                  </div>
+                  
+                  <div class="formulario__grupo formulario__grupo-btn-register">
+                    <button type="submit" class="formulario__btn">Registrarse</button>
+                    <p class="formulario__mensaje-extio" id="formulario__mensaje-extio">Cuenta registrada correctamente</p>
+
+                  </div>
               </form>
           </div>
       </div>
@@ -56,6 +111,7 @@
   </main>
 
   <script src="main.js"></script>
+  <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
 <br><br><br>
 <footer>
   <div class="contenedor-footer">

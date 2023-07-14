@@ -7,11 +7,11 @@
 }
 
 body {
-  font-family: Righteous-Regular;
-  margin: 0;
-  background: url(../imagenes/fondo2.png);
-  background-size: cover;
-  background-attachment: fixed;
+    font-family: Righteous, sans-serif;
+    margin: 0;
+    background: url(../imagenes/fondo2.png);
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 main{
@@ -62,7 +62,7 @@ main{
 }
 
 .formulario__input-error:active{
-    display: block;
+    display: flex;
 }
 
 .formulario__validacion-estado{
@@ -81,12 +81,12 @@ main{
 .formulario__grupo-terminos
 .formulario__mensaje
 .formulario__grupo-btn-register{
-    grid-column: spam 2;
+    grid-column: span 2;
 
 }
 
 .formulario__mensaje-activo{
-    display: block;
+    display: flex;
 }
 
 .formulario__mensaje p{
@@ -102,7 +102,7 @@ main{
 .formulario__mensaje-exito{
     font-size: 14px;
     color: #119200;
-    display: 0;
+    display: none;
 }
 
 .formulario__mensaje-exito-activo{

@@ -21,6 +21,7 @@ main{
     margin-top: 100px;
 }
 
+/*
 .formulario{
     display: grid;
     gap: 20px;
@@ -39,14 +40,13 @@ main{
 }
 
 .formulario__input{
-    width: 100px;
-    background: #fff;
-    border: 3px solid transparent;
-    border-radius: 3px;
-    height: 45px;
-    line-height: 45px;
-    padding: 0 40px 0 10px;
-    transition: .3s ease all;
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    background: #F2F2F2;
+    font-size: 16px;
+    outline: none;
 }
 
 .formulario__input:focus{
@@ -131,6 +131,7 @@ main{
     border-radius: 3px;
     display: none;
 }
+*/
 
 .contenedor__todo{
     width: 100%;
@@ -219,7 +220,7 @@ main{
     color: #46A2FD;
 }
 
-.contenedor__login-register form input{
+.contenedor__login-register .formulario__login input{
     width: 100%;
     margin-top: 20px;
     padding: 10px;

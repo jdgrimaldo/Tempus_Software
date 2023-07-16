@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -65,7 +65,7 @@
                         <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Nombre Completo">
                         <i class="formulario__validacion-estado fas fa-times-circle"></i>
                       </div>
-                    <p class="formulario__input-error">El nombre no puede contener numeros y signos.</p>
+                    <p class="formulario__input-error">El nombre no puede contener numeros.</p>
                   </div>
 
                   <!--Grupo: Corrreo Electronico-->
@@ -76,6 +76,16 @@
                         <i class="formulario__validacion-estado fas fa-times-circle"></i>
                       </div>
                     <p class="formulario__input-error">El correo solo puede contener letras, numeros, guiones y guiones bajos.</p>
+                  </div>
+
+                  <!--Grupo: Teléfono-->
+                  <div class="formulario__grupo" id="grupo__telefono">
+                    <!--<label for="telefono" class="formulario__label">Télefono</label>-->
+                      <div class="formulario__grupo-input">
+                        <input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="Télefono">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                      </div>
+                    <p class="formulario__input-error">Solo se pueden ingresar numeros y deben ser de 7 a 14 digitos.</p>
                   </div>
 
                   <!--Grupo: Contraseña-->
@@ -117,7 +127,7 @@
   <div class="contenedor-footer">
     <div class="content-foo">
       <h4><a href="login.html">Inicia Sesion</a></h4>
-      <p><a href="index.html">Vuelve a Inicio</a></p>
+      <p><a href="../index.html">Vuelve a Inicio</a></p>
   </div>
   <div class="content-foo">
     <h4>Nuestro Horario</h4>

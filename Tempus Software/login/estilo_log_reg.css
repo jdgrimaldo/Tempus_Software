@@ -23,7 +23,7 @@ main{
 
 .contenedor__todo{
     width: 100%;
-    max-width: 800px;
+    max-width: 815px;
     margin: auto;
     position: relative;
 }
@@ -84,7 +84,7 @@ main{
     display: flex;
     align-items: center;
     width: 100%;
-    max-width: 380px;
+    max-width: 395px;
     position: relative;
     top: -185px;
     left: 10px;
@@ -207,6 +207,7 @@ main{
 	padding: 0 15px;
 	border-radius: 3px;
 	display: none;
+    font-size: 13.3px;
 }
 
 .formulario__mensaje-activo{
@@ -226,7 +227,7 @@ main{
 .formulario__btn{
 	height: 45px;
 	line-height: 30px;
-	width: 60%;
+	width: 50%;
 	background: #46A2FD;
 	color: #fff;
 	font-weight: bold;
@@ -240,6 +241,7 @@ main{
 	font-size: 14px;
 	color: #119200;
 	display: none;
+    padding: 20px 60px;
 }
 
 .formulario__mensaje-exito-activo{

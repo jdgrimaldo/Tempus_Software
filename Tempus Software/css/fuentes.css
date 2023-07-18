@@ -22,8 +22,18 @@
 }
 
 @font-face {
-  font-family: PressStart2P-Regular;
-  src: url(../fuentes/PressStart2P-Regular.ttf);
+  font-family: Finlandica-Italic-VariableFont_wght;
+  src: url(../fuentes/Finlandica-Italic-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: PlayfairDisplay-Italic-VariableFont_wght;
+  src: url(../fuentes/PlayfairDisplay-Italic-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: Lugrasimo-Regular;
+  src: url(../fuentes/Lugrasimo-Regular.ttf);
 }
 
 h2 {

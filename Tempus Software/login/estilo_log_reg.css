@@ -139,7 +139,7 @@ main{
 }
 
 .formulario__register{
-	display: grid;
+	/*display: grid;*/
 	gap: 20px;
 }
 

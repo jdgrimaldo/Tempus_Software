@@ -111,7 +111,7 @@ nav a{
 
 header .textos-header{
   display: flex;
-  height: 430px;
+  height: 370px;
   width: 100%;
   align-items: center;
   justify-content: center;
@@ -121,12 +121,15 @@ header .textos-header{
 
 .textos-header h1{
   font-size: 50px;
+  font-family: test;
   color:#fff;
 }
 
 .textos-header h2{
   font-size: 30px;
   font-weight: 300;
+  font-family: Alegreya;
+  padding: 14px;
   color:#fff;
 }
 

@@ -5,11 +5,15 @@
 body {
   width: 100%;
   height: 100%;
-  background-color: transparent;
+  background-color: #faf4f4;
 }
 
 img {
   max-width: 100%;
+}
+
+*, ::before, ::after {
+    box-sizing: border-box;
 }
 
 @media screen and (min-width: 300px) and (max-width: 800px) {
@@ -55,17 +59,17 @@ img {
 }
 
 nav > a:hover {
-  -webkit-transform: scale(5.3);
-  transform: scale(1.3);
+  -webkit-transform: scale(1.3);
+  transform: scale(1);
   color: rgba(202, 30, 73, 0.877);
-  padding: 10px;
+  border-bottom: 1px solid #fff;
 }
 
 .contenido-textos a:hover {
-  -webkit-transform: scale(5.3);
+  -webkit-transform: scale(4.3);
   transform: scale(1.3);
   color: rgba(202, 30, 73, 0.877);
-  padding: 10px;
+  padding: 1px;
 }
 
 .logo a img:hover {
@@ -87,7 +91,6 @@ nav > a:hover {
 header {
   width: 100%;
   height: 600px;
-  background: rgba(0, 128, 255, 0.5);
   background: linear-gradient(to right, rgba(0, 128, 255, 0.5), hsla(317, 45%, 52%, 0.664)), url(../imagenes/laptos/lapto3.jpg);
   background-size: cover;
   background-attachment: fixed;
@@ -101,7 +104,7 @@ nav{
 
 nav a{
   color:#fff;
-  font-size: 14px;
+  font-size: 13px;
   font-family: Lugrasimo-Regular;
   font-weight: 300;
   text-decoration: none;
@@ -175,8 +178,11 @@ main .sobre-nosotros{
 }
 
 .contenido-textos h3{
+  color: #fff;
   margin-bottom: 15px;
   font-family: Lugrasimo-Regular;
+  background: #46A2FD;
+  border-radius: 200px;
 }
 
 .contenido-textos h3 span{
@@ -224,25 +230,26 @@ main .sobre-nosotros{
 
 .servicio-ind{
   width: 30%;
+  font-size: 14px;
   text-align: center;
   font-family: Lugrasimo-Regular;
   color: rgba(0, 128, 255, 0.5);
 }
 
 .servicio-ind img{
-  width: 80%;
+  width: 75%;
 }
 
 .servicio-ind h3{
-  margin: 10px 0;
-  padding: 6px;
+  margin: 10px;
+  padding: 4px;
 }
 
 .servicio-ind p, a{
   text-decoration: none;
   font-weight: 300;
   padding: 5px;
-  font-size: 20px;
+  font-size: 17px;
   text-align: justify;
   color: #070606;
   font-family: Finlandica-Italic-VariableFont_wght;
@@ -462,7 +469,7 @@ footer{
 
   .content-foo p{
       color: #f2f2f2;
-      border-bottom: 1px solid #f2f2f2;
+      border-bottom: 1px solid rgba(0, 128, 255, 0.808);
       padding-bottom: 20px;
   }
 

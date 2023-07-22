@@ -14,6 +14,44 @@ body {
     background-attachment: fixed;
 }
 
+/*Menu Login*/
+
+.menu-login{
+    text-align: right;
+    padding: 25px 12px 0 0;
+}
+  
+.menu-login a{
+    color:#fff;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: Finlandica-Italic-VariableFont_wght;
+    font-weight: 300;
+    margin-right: 16px;
+}
+
+/*Efectos Menu Login*/
+.menu-login a:hover{
+    border-bottom: 1px solid #fff;
+}
+
+.login-logo img{
+    margin-right: 16px;
+    padding-left: 6px;
+    padding-right: 6px;
+    height: 100px;
+    width: 160px;
+    float: left;
+}
+  
+.login-logo img:hover {
+    filter: blur(2px);
+  }
+
+/*-----*/
+
 main{
     width: 100%;
     padding: 20px;

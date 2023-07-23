@@ -60,6 +60,26 @@ inputs.forEach((input) => {
 	input.addEventListener("blur", validarFormulario);
 });
 
+const formulario__register = document.querySelector('#formulario__register')
+formulario__register.addEventListener('submit', (e)=>{
+    e.preventDefault()
+    const usuario = document.querySelector('#usuario').value.trim();
+    const correo = document.querySelector('#correo').value.trim();
+    const telefono = document.querySelector('#telefono').value.trim();
+    const password = document.querySelector('#password').value.trim();
+
+    const Users = JSON.parse(localStorage.getItem('users')) || []
+    const isUserRegistered = Users.find(user => user.correo === correo && user.telefono === telefono)
+    if(isUserRegistered){
+        return alert('El usuario ya esta registado!')
+    }
+
+    Users.push({usuario: usuario, correo: correo, password: password, telefono: telefono})
+    localStorage.setItem('users', JSON.stringify(Users))
+    window.location.href = 'login.html'
+
+})
+
 formulario.addEventListener("submit", (e) => {
 	e.preventDefault();
 
@@ -82,3 +102,19 @@ formulario.addEventListener("submit", (e) => {
     }, 5000);
   }
 });
+
+const formulario__login = document.querySelector('#formulario__login')
+formulario__login.addEventListener('submit', (e)=>{
+    e.preventDefault()
+    const correo = document.querySelector('#login__correo').value
+    const password = document.querySelector('#login__password').value
+    const Users = JSON.parse(localStorage.getItem('users')) || []
+    const validUser = Users.find(user => user.correo === correo && user.password === password)
+    if(!validUser){
+        return alert('Usuario y/o contraseña incorrectos!')
+    }
+    alert(`Bienvenido ${validUser.usuario}`)
+    localStorage.setItem('login_success', JSON.stringify(validUser))
+    window.location.href = '/Tempus Software/index.html'   
+
+})

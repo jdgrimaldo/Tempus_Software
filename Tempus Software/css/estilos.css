@@ -92,8 +92,9 @@ header {
   width: 100%;
   height: 600px;
   background: linear-gradient(to right, rgba(0, 128, 255, 0.5), hsla(317, 45%, 52%, 0.664)), url(../imagenes/laptos/lapto3.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
-  background-attachment: fixed;
   position: relative;
 }
 
@@ -110,6 +111,17 @@ nav a{
   text-decoration: none;
   margin-right: 10px;
 }
+
+
+header #logout{
+  color:#fff;
+  font-size: 13px;
+  font-family: Lugrasimo-Regular;
+  font-weight: 300;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
 
 .logo a img{
   height: 120px;
@@ -168,9 +180,9 @@ main .sobre-nosotros{
   width: 48%;
 }
 
-.imagen-about-ubicacion{
-  width: 68%;
-  padding: 5px;
+.ubicacion-mapa img{
+  width: 90%;
+  padding: 1px;
 }
 
 .sobre-nosotros .contenido-textos{
@@ -377,7 +389,7 @@ footer{
       width: 90%;
   }
 
-  .imagen-about-ubicacion{ 
+  .ubicacion-mapa img{ 
     width: 90%;
   }
 

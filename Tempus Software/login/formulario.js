@@ -114,6 +114,6 @@ formulario__login.addEventListener('submit', (e)=>{
         return alert('Usuario y/o contraseña incorrectos!')
     }
     localStorage.setItem('login_success', JSON.stringify(validUser))
-    window.location.href = '/Tempus Software/index.html'   
+    window.location.href = '../index.html'   
 
 })

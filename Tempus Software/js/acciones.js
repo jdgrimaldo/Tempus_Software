@@ -46,5 +46,24 @@ logout.addEventListener('click', ()=>{
     localStorage.removeItem('login_success')
 })
 
+const login_success = JSON.parse(localStorage.getItem('login_success'))
+if (login_success) {
+const mensajeBienvenida = document.querySelector('#mensaje-bienvenida')
+mensajeBienvenida.innerText = `Bienvenido, ${login_success.usuario}!`;
+localStorage.removeItem('login_success')
+}
+
+const logoutButton = document.querySelector('#logout')
+
+logoutButton.addEventListener('click', () => {
+    localStorage.removeItem('login_success')
+    location.reload()
+})
 
 
+/*Catalogo De Laptos y Productos*/
+
+function toggleDescripcion(id) {
+    var descripcion = document.querySelector(`#${id}`);
+    descripcion.classList.toggle('visible');
+  }

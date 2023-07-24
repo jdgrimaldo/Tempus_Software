@@ -10,29 +10,48 @@
     />
     <title>Tempus Software</title>
     <link rel="stylesheet" type="text/css" href="css/estilos.css" />
-    <link rel="stylesheet" type="text/css" href="css/fuentes.css" />
+    <link rel="stylesheet" type="text/css" href="css/fuentes.css"/>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="iconos/fontawesome/css/all.css">
   </head>
   <body>
     <header>
-      <div class="logo">
-        <a href="index.html"><img src="imagenes/fondo pagina1.png" alt=""></a> 
-      </div>
-      <nav>      
-        <a href="index.html">INICIO</a>
-        <a href="laptos.html">LAPTOS</a>
-        <a href="accesorios.html">ACCESORIOS</a>
-        <a href="componentes.html">COMPONENETES</a>
-        <a href="login/login.html">LOGIN</a>
-    </nav>
+      <nav class="nav container">
+          <div class="nav__logo">
+            <img class="nav__title" src="imagenes/fondo pagina1.png"></img>
+          </div>
+          <ul class="nav__link nav__link--menu">
+              <li class="nav__items">
+                  <a href="index.html" class="nav__links">Inicio</a>
+              </li>
+              <li class="nav__items">
+                  <a href="laptos.html" class="nav__links">Laptos</a>
+              </li>
+              <li class="nav__items">
+                  <a href="accesorios.html" class="nav__links">Accesorios</a>
+              </li>
+              <li class="nav__items">
+                  <a href="componentes.html" class="nav__links">Componentes</a>
+              </li>
+              <li class="nav__items">
+                <a href="login/login.html" class="nav__links">Login</a>
+                <button id="logout">Logout</button>
+            </li>
+              <img class="nav__close" src="imagenes/inicio/close.svg">
+          </ul>
+  
+          <div class="nav__menu">
+            <img class="nav__img" src="imagenes/inicio/menu.svg">
+          </div>
+      </nav>
       <section class="textos-header">
-          <h1>Tempus Software and Hardware</h1>
+          <h1 class="fa fa-beat-fade">Tempus Software and Hardware</h1>
           <h2>Somos una Empresa pequeña con el Proposito de Ayudar a Solucionar tus Problemas</h2>
       </section>
       <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
               style="height: 100%; width: 100%;">
               <path d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
-                  style="stroke: none; fill: #fff;"></path>
+                  style="stroke: none; fill: #faf4f4;"></path>
           </svg></div>
   </header>
     <main>

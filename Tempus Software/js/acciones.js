@@ -39,3 +39,7 @@ logoutButton.addEventListener('click', () => {
     localStorage.removeItem('login_success')
     location.reload()
 })
+function toggleDescripcion(id) {
+  var descripcion = document.querySelector(`#${id}`);
+  descripcion.classList.toggle('visible');
+}

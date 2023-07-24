@@ -556,3 +556,86 @@ footer{
       height: 6.6rem;
   }
 }
+ /*------------------------*/
+/* Catalogo, en su primera edicion */
+ /*---------------------*/
+.catalogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 300px) and (max-width: 2000px) {
+  .producto img {
+    width: 100%;
+    height: auto;
+  }
+  .catalogo {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+.row {
+    flex-direction: column;
+    width: 100%;
+  }
+
+.producto {
+    width: 33.33%;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+.descripcion {
+    margin-bottom: 10px;
+    max-height: none;
+    font-family: Finlandica-Italic-VariableFont_wght;
+    opacity: 0;
+    transition: opacity 300ms, max-height 300ms;
+    background-color: rgba(0, 128, 255, 0.808);
+    border-radius: 10px;
+    padding: 10px;
+    color: #ffffff;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+  }
+
+.descripcion.visible {
+    opacity: 1;
+    max-height: 500px;
+  }
+
+h1 {
+    color: rgba(0, 128, 255, 0.5);
+    font-family: Lugrasimo-Regular;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 60px;
+  }
+
+h3 {
+    color: rgba(0, 128, 255, 0.5);
+    font-family: Lugrasimo-Regular;
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 30px;
+  }
+
+.maxHeight {
+    height: auto;
+  }
+
+@media screen and (max-width: 600px) {
+    .catalogo {
+      flex-direction: column;
+    }
+    .producto {
+      width: 100%;
+    }
+  }
+}
+.toca
+{
+  font-family: Lugrasimo-Regular;
+  font-size: 13px;
+}

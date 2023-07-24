@@ -113,7 +113,6 @@ formulario__login.addEventListener('submit', (e)=>{
     if(!validUser){
         return alert('Usuario y/o contraseña incorrectos!')
     }
-    alert(`Bienvenido ${validUser.usuario}`)
     localStorage.setItem('login_success', JSON.stringify(validUser))
     window.location.href = '/Tempus Software/index.html'   
 

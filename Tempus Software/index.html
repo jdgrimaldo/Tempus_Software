@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -23,7 +22,6 @@
         <div class="nav__logo">
           <img class="nav__title" src="imagenes/fondo pagina1.png"></img>
         </div>
-        <span id="mensaje-bienvenida"></span>
         <ul class="nav__link nav__link--menu">
             <li class="nav__items">
                 <a href="index.html" class="nav__links">Inicio</a>
@@ -37,10 +35,15 @@
             <li class="nav__items">
                 <a href="componentes.html" class="nav__links">Componentes</a>
             </li>
-            <li class="nav__items">
-              <a href="login/login.html" class="nav__links">Login</a>
-              <button id="logout">Logout</button>
-          </li>
+
+            <div class="nav__items_conteiner">
+              <li class="fa-solid fa-circle-user fa-fade"><a href=""> Usuario</a>
+              <div class="nav__items_categorias">
+              <a href="login/login.html" class="nav__links">Iniciar Sesion</a>
+              <a id="logout">Cerrar Sesion</a>
+              <a><span id="mensaje-bienvenida"></span></a>
+              </div>
+            </div>
             <img class="nav__close" src="imagenes/inicio/close.svg">
         </ul>
 

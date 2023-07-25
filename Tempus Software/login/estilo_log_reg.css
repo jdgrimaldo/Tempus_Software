@@ -33,9 +33,13 @@ body {
 }
 
 /*Efectos Menu Login*/
-.menu-login a:hover{
+.menu-login a:hover {
+    -webkit-transform: scale(1.3);
+    transform: scale(1);
+    color: #fff;
     border-bottom: 1px solid #fff;
-}
+  }
+
 
 .login-logo img{
     margin-right: 16px;

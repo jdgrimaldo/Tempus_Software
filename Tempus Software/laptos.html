@@ -2,259 +2,268 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <title>Tempus Software</title>
-    <link rel="stylesheet" type="text/css" href="css/estilos.css">
-    <link rel="stylesheet" type="text/css" href="css/fuentes.css">
-    <link rel="stylesheet" href="css/catalogo.css">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="iconos/fontawesome/css/all.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>Tempus Software</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="shortcut icon" href="imagenes/fondo pagina1.png" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="css/estilos.css" />
+  <link rel="stylesheet" type="text/css" href="css/fuentes.css" />
+  <link rel="stylesheet" href="iconos/fontawesome/css/all.css">
+  <link rel="stylesheet" href="css/catalogo.css">
+  <link rel="stylesheet" href="iconos/fontawesome/css/all.css">
 </head>
 
 <body>
   <header>
     <nav class="nav container">
-        <div class="nav__logo">
-          <img class="nav__title" src="imagenes/fondo pagina1.png"></img>
-        </div>
-        <ul class="nav__link nav__link--menu">
-          <li class="nav__items">
-              <a href="index.html" class="nav__links">Inicio</a>
-          </li>
-          <li class="nav__items">
-              <a href="laptos.html" class="nav__links">Laptos</a>
-          </li>
-          <li class="nav__items">
-              <a href="productos.html" class="nav__links">Productos</a>
-          </li>
-          <div class="nav__items_conteiner">
-            <li class="fa-solid fa-circle-user fa-fade"><a href=""> Usuario</a>
+      <div class="nav__logo">
+        <img class="nav__title" src="imagenes/fondo pagina1.png"></img>
+      </div>
+      <ul class="nav__link nav__link--menu">
+        <li class="nav__items">
+          <a href="index.html" class="nav__links">Inicio</a>
+        </li>
+        <li class="nav__items">
+          <a href="laptos.html" class="nav__links">Laptos</a>
+        </li>
+        <li class="nav__items">
+          <a href="productos.html" class="nav__links">Productos</a>
+        </li>
+        <div class="nav__items_conteiner">
+          <li class="fa-solid fa-circle-user fa-fade"><a href=""> Usuario</a>
             <div class="nav__items_categorias">
-            <a href="login/login.html" class="nav__links">Iniciar Sesion</a>
-            <a id="logout">Cerrar Sesion</a>
-            <a><span id="mensaje-bienvenida"></span></a>
+              <a href="login/login.html" class="nav__links">Iniciar Sesion</a>
+              <a id="logout">Cerrar Sesion</a>
+              <a><span id="mensaje-bienvenida"></span></a>
             </div>
-          </div>
-          <img class="nav__close" src="imagenes/inicio/close.svg">
+        </div>
+        <img class="nav__close" src="imagenes/inicio/close.svg">
       </ul>
 
-        <div class="nav__menu">
-          <img class="nav__img" src="imagenes/inicio/menu.svg">
-        </div>
+      <div class="nav__menu">
+        <img class="nav__img" src="imagenes/inicio/menu.svg">
+      </div>
     </nav>
     <section class="textos-header">
-        <h1 class="fa fa-beat-fade">Tempus Software and Hardware</h1>
-        <h2>Somos una Empresa pequeña con el Proposito de Ayudar a Solucionar tus Problemas</h2>
+      <h1 class="fa fa-beat-fade">Tempus Software and Hardware</h1>
+      <h2>Somos una Empresa pequeña con el Proposito de Ayudar a Solucionar tus Problemas</h2>
     </section>
     <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
-            style="height: 100%; width: 100%;">
-            <path d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
-                style="stroke: none; fill: #faf4f4;"></path>
-        </svg></div>
-</header>
-    <main>
+        style="height: 100%; width: 100%;">
+        <path d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+          style="stroke: none; fill: #faf4f4;"></path>
+      </svg></div>
+  </header>
+  <main>
 
-      <section>
-        <h1 class="titulo">laptops</h1>
-        <div class="catalogo">
-          <div class="producto" onclick="toggleDescripcion('producto1')">
-            <figure>
-              <img src="imagenes/ventas/laptos/lenovo.png" alt="Producto 1" class="imagen">
-              <figcaption>
-                <p class="toca">(Toca la imagen)</p>
-                <h3 class="nombre">Lenovo v15</h3>
-                <p class="aparicion">(Toca aqui)</p>
-                <div class="descripcion" id="producto1">
-                  <p class="caracteristicas">Caracteristicas: </p>
-                  <ul>
-                    <li>
-                      <p class="info">Procesador: Intel Core i7</p>
-                    </li>
-                    <li>
-                      <p class="info">12GB de RAM</p>
-                    </li>
-                    <li>
-                      <p class="info">Almacenamiento: SSD de 480GB.</p>
-                    </li>
-                    <li>
-                      <p class="info">Pantalla: 15.6 Pulgadas</p>
-                    </li>
-                  </ul>
-                </div>
-              </figcaption>
-            </figure>
-          </div>
-          <div class="producto" onclick="toggleDescripcion('producto2')">
-            <figure>
-              <img src="imagenes/ventas/laptos/hp envy.png" alt="Producto 2" class="imagen">
-              <figcaption>
-                <p class="toca">(Toca la imagen)</p>
-                <h3 class="nombre">hp envy</h3>
-                <p class="aparicion">(Toca aqui)</p>
-                <div class="descripcion" id="producto2">
-                  <p class="caracteristicas">Caracteristicas: </p>
-                  <ul>
-                    <li>
-                      <p class="info">Procesador: Intel Core i7</p>
-                    </li>
-                    <li>
-                      <p class="info">8GB de RAM</p>
-                    </li>
-                    <li>
-                      <p class="info">Almacenamiento: SSD de 240GB.</p>
-                    </li>
-                    <li>
-                      <p class="info">Pantalla: 13.4 Pulgadas</p>
-                    </li>
-                  </ul>
-                </div>
-              </figcaption>
-            </figure>
-          </div>
-          <div class="producto" onclick="toggleDescripcion('producto3')">
-            <figure>
-              <img src="imagenes/ventas/laptos/lenovo thinkpad.png" alt="Producto 3" class="imagen">
-              <figcaption>
-                <p class="toca">(Toca la imagen)</p>
-                <h3 class="nombre">Lenovo Thinkpad</h3>
-                <p class="aparicion">(Toca aqui)</p>
-                <div class="descripcion" id="producto3">
-                  <p class="caracteristicas">Caracteristicas: </p>
-                  <ul>
-                    <li>
-                      <p class="info">Procesador: AMD Ryzen 3</p>
-                    </li>
-                    <li>
-                      <p class="info">8GB de RAM</p>
-                    </li>
-                    <li>
-                      <p class="info">Almacenamiento: SSD de 240GB.</p>
-                    </li>
-                    <li>
-                      <p class="info">Pantalla: 15.6 Pulgadas</p>
-                    </li>
-                  </ul>
-                </div>
-              </figcaption>
-            </figure>
-          </div>
-          <div class="producto" onclick="toggleDescripcion('producto4')">
-            <figure>
-              <img src="imagenes/ventas/laptos/dell inspiron.png" alt="Producto 4" class="imagen">
-              <figcaption>
-                <p class="toca">(Toca la imagen)</p>
-                <p class="aparicion">(Toca aqui)</p>
-                <h3 class="nombre">dell inspiron 15r</h3>
-                <div class="descripcion" id="producto4">
-                  <p class="caracteristicas">Caracteristicas: </p>
-                  <ul>
-                    <li>
-                      <p class="info">Procesador: Intel Core i5</p>
-                    </li>
-                    <li>
-                      <p class="info">8GB de RAM</p>
-                    </li>
-                    <li>
-                      <p class="info">Almacenamiento: SSD de 512GB.</p>
-                    </li>
-                    <li>
-                      <p class="info">Pantalla: 15.6 Pulgadas</p>
-                    </li>
-                  </ul>
-                </div>
-              </figcaption>
-            </figure>
-          </div>
-          <div class="producto" onclick="toggleDescripcion('producto5')">
-            <figure>
-              <img src="imagenes/ventas/laptos/asus vivobook.png" alt="Producto 5" class="imagen">
-              <figcaption>
-                <p class="toca">(Toca la imagen)</p>
-                <h3 class="nombre">asus vivobook</h3>
-                <p class="aparicion">(Toca aqui)</p>
-                <div class="descripcion" id="producto5">
-                  <p class="caracteristicas">Caracteristicas: </p>
-                  <ul>
-                    <li>
-                      <p class="info">Procesador: AMD Ryzen 5 3500U</p>
-                    </li>
-                    <li>
-                      <p class="info">12GB de RAM</p>
-                    </li>
-                    <li>
-                      <p class="info">Almacenamiento: SSD de 512GB.</p>
-                    </li>
-                    <li>
-                      <p class="info">Pantalla: 15.6 Pulgadas</p>
-                    </li>
-                  </ul>
-                </div>
-              </figcaption>
-            </figure>
-          </div>
-          <div class="producto" onclick="toggleDescripcion('producto6')">
-            <figure>
-              <img src="imagenes/ventas/laptos/acer.png" alt="Producto 6" class="imagen">
-              <figcaption>
-                <p class="toca">(Toca la imagen)</p>
-                <h3 class="nombre">acer aspire</h3>
-                <p class="aparicion">(Toca aqui)</p>
-                <div class="descripcion" id="producto6">
-                  <p class="caracteristicas">Caracteristicas: </p>
-                  <ul>
-                    <li>
-                      <p class="info">Procesador: Intel Core i3</p>
-                    </li>
-                    <li>
-                      <p class="info">8GB de RAM</p>
-                    </li>
-                    <li>
-                      <p class="info">Almacenamiento: SSD de 128GB.</p>
-                    </li>
-                    <li>
-                      <p class="info">Pantalla: 15.6 Pulgadas</p>
-                    </li>
-                  </ul>
-                </div>
-              </figcaption>
-            </figure>
-          </div>
+    <section>
+      <h1 class="titulo">Categorias de Laptos</h1>
+      <div class="catalogo">
+        <div class="producto" onclick="toggleDescripcion('producto1')">
+          <figure>
+            <img src="imagenes/ventas/laptos/lenovo.png" width="330" height="300" alt="Producto 1" class="imagen">
+            <figcaption>
+              <p class="toca">Lenovo v15</p>
+              <p class="aparicion">Mas Informacion</p>
+              <div class="descripcion" id="producto1">
+                <p class="caracteristicas">Caracteristicas: </p>
+                <ul>
+                  <li>
+                    <p class="info">Procesador: Intel Core i7</p>
+                  </li>
+                  <li>
+                    <p class="info">12GB de RAM</p>
+                  </li>
+                  <li>
+                    <p class="info">Almacenamiento: SSD de 480GB.</p>
+                  </li>
+                  <li>
+                    <p class="info">Pantalla: 15.6 Pulgadas</p>
+                  </li>
+                </ul>
+              </div>
+            </figcaption>
+          </figure>
         </div>
-        <h1 class="texto-final">"Siempre trabajando con la mejor tecnologia del mercado"</h1>
-        <br><br>
-      </section>
+        <div class="producto" onclick="toggleDescripcion('producto2')">
+          <figure>
+            <img src="imagenes/ventas/laptos/lenovo thinkpad.png" width="330" height="300" alt="Producto 2" class="imagen">
+            <figcaption>
+              <p class="toca">Lenovo Thinkpad</p>
+              <p class="aparicion">Mas Informacion</p>
+              <div class="descripcion" id="producto2">
+                <p class="caracteristicas">Caracteristicas: </p>
+                <ul>
+                  <li>
+                    <p class="info">Procesador: AMD Ryzen 3</p>
+                  </li>
+                  <li>
+                    <p class="info">8GB de RAM</p>
+                  </li>
+                  <li>
+                    <p class="info">Almacenamiento: SSD de 240GB.</p>
+                  </li>
+                  <li>
+                    <p class="info">Pantalla: 15.6 Pulgadas</p>
+                  </li>
+                </ul>
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="producto" onclick="toggleDescripcion('producto3')">
+          <figure>
+            <img src="imagenes/ventas/laptos/hp envy2.png" width="330" height="300" alt="Producto 3" class="imagen">
+            <figcaption>
+              <p class="toca">Hp Envy</p>
+              <p class="aparicion">Mas Informacion</p>
+              <div class="descripcion" id="producto3">
+                <p class="caracteristicas">Caracteristicas: </p>
+                <ul>
+                  <li>
+                    <p class="info">Procesador: Intel Core i7</p>
+                  </li>
+                  <li>
+                    <p class="info">8GB de RAM</p>
+                  </li>
+                  <li>
+                    <p class="info">Almacenamiento: SSD de 240GB.</p>
+                  </li>
+                  <li>
+                    <p class="info">Pantalla: 13.4 Pulgadas</p>
+                  </li>
+                </ul>
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="producto" onclick="toggleDescripcion('producto4')">
+          <figure>
+            <img src="imagenes/ventas/laptos/dell inspiron.png" width="330" height="300" alt="Producto 4" class="imagen">
+            <figcaption>
+              <p class="toca">Dell Inspiron 15r</p>
+              <p class="aparicion">Mas Informacion</p>
+              <div class="descripcion" id="producto4">
+                <p class="caracteristicas">Caracteristicas: </p>
+                <ul>
+                  <li>
+                    <p class="info">Procesador: Intel Core i5</p>
+                  </li>
+                  <li>
+                    <p class="info">8GB de RAM</p>
+                  </li>
+                  <li>
+                    <p class="info">Almacenamiento: SSD de 512GB.</p>
+                  </li>
+                  <li>
+                    <p class="info">Pantalla: 15.6 Pulgadas</p>
+                  </li>
+                </ul>
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="producto" onclick="toggleDescripcion('producto5')">
+          <figure>
+            <img src="imagenes/ventas/laptos/asus vivobook.png" width="330" height="300" alt="Producto 5" class="imagen">
+            <figcaption>
+              <p class="toca">Asus Vivobook</p>
+              <p class="aparicion">Mas Informacion</p>
+              <div class="descripcion" id="producto5">
+                <p class="caracteristicas">Caracteristicas: </p>
+                <ul>
+                  <li>
+                    <p class="info">Procesador: AMD Ryzen 5 3500U</p>
+                  </li>
+                  <li>
+                    <p class="info">12GB de RAM</p>
+                  </li>
+                  <li>
+                    <p class="info">Almacenamiento: SSD de 512GB.</p>
+                  </li>
+                  <li>
+                    <p class="info">Pantalla: 15.6 Pulgadas</p>
+                  </li>
+                </ul>
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="producto" onclick="toggleDescripcion('producto6')">
+          <figure>
+            <img src="imagenes/ventas/laptos/acer.png" width="330" height="300" alt="Producto 6" class="imagen">
+            <figcaption>
+              <p class="toca">Acer Aspire</p>
+              <p class="aparicion">Mas Informacion</p>
+              <div class="descripcion" id="producto6">
+                <p class="caracteristicas">Caracteristicas: </p>
+                <ul>
+                  <li>
+                    <p class="info">Procesador: Intel Core i3</p>
+                  </li>
+                  <li>
+                    <p class="info">8GB de RAM</p>
+                  </li>
+                  <li>
+                    <p class="info">Almacenamiento: SSD de 128GB.</p>
+                  </li>
+                  <li>
+                    <p class="info">Pantalla: 15.6 Pulgadas</p>
+                  </li>
+                </ul>
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+      <h1 class="texto-final">"Siempre trabajando con la mejor tecnologia del mercado"</h1>
+      <br><br>
+    </section>
 
-    </main>
-    <footer>
-      <div class="contenedor-footer">
-        <div class="content-foo">
-          <h4><a href="login/login.html">Inicia Sesion</a></h4>
-          <p><a href="index.html">Vuelve a Inicio</a></p>
+  </main>
+  <div class="wave2" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+      style="height: 100%; width: 100%;">
+      <path d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+        style="stroke: none; fill: #413e41;"></path>
+    </svg></div>
+  <footer>
+
+    <div class="contenedor-footer">
+      <div class="content-foo">
+        <div class="enlaces">
+          <h1><a href="login/login.html">Inicia Sesion</a></h1>
+          <br></br>
+        </div>
       </div>
       <div class="content-foo">
         <h4>Nuestro Horario</h4>
         <p> Lunes a Sabado - 8:00 am a 5:00 pm <br>
-         Domingo - Cerrado</p>
-    </div>
-          <div class="content-foo">
-              <h4>Nos Puedes Encontrar</h4>
-              <p>San Cristobal Centro Civico Sotano Local 9 <br>
-              <a class="ubicacion" href="https://goo.gl/maps/dPLKakB9cd8oq4Gk7">Google Map</a></p>
-          </div>
-          <div class="content-foo">
-              <h4>Siguenos & Contactanos</h4>
-              <a href="https://www.facebook.com/people/Tempus-Software-and-Hardware/100071946285434/"class="fab fa-facebook-square fa-2x"></a>
-        <a href="https://www.instagram.com/tempus.09/?hl=es" class="fa-brands fa-instagram fa-2x"></a>
-        <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSMVlCTwBVwKPtdWDNJpzpRFSVxPVWSzqRvRnmxNVNkpTCmLkQTpjkNQXXPJFZnqhGJtXXWP"class="fa fa-light fa-envelope fa-2x"></a>
-        <a href="https://api.whatsapp.com/send/?phone=584247233495&text&type=phone_number&app_absent=0"class="fa-brands fa-whatsapp fa-2x"></a>
-          </div>
+          Domingo - Cerrado</p>
       </div>
-      <h2 class="titulo-final">&copy; Tempus Software and Hardware 2023 | Todos los Derechos Reservados</h2>
+      <div class="content-foo">
+        <h4>Nos Puedes Encontrar</h4>
+        <p>San Cristobal Centro Civico Sotano Local 9 <br>
+          <a class="ubicacion" href="https://goo.gl/maps/dPLKakB9cd8oq4Gk7">Google Map</a>
+        </p>
+      </div>
+      <div class="content-foo">
+        <h4>Siguenos & Contactanos</h4>
+        <a href="https://www.facebook.com/people/Tempus-Software-and-Hardware/100071946285434/"
+          class="fab fa-facebook-square fa-2x"></a>
+        <a href="https://www.instagram.com/tempus.09/?hl=es" class="fa-brands fa-instagram fa-2x"></a>
+        <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSMVlCTwBVwKPtdWDNJpzpRFSVxPVWSzqRvRnmxNVNkpTCmLkQTpjkNQXXPJFZnqhGJtXXWP"
+          class="fa fa-light fa-envelope fa-2x"></a>
+        <a href="https://api.whatsapp.com/send/?phone=584247233495&text&type=phone_number&app_absent=0"
+          class="fa-brands fa-whatsapp fa-2x"></a>
+      </div>
+    </div>
+    <h2 class="titulo-final">&copy; Tempus Software and Hardware 2023 | Todos los Derechos Reservados</h2>
   </footer>
-    <script src="js/acciones.js"></script>
-  </body>
-  </html>
+  <script src="js/acciones.js"></script>
+</body>
+
+</html>

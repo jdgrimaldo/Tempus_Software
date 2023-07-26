@@ -9,8 +9,10 @@ body {
 }
 
 
-*, ::before, ::after {
-    box-sizing: border-box;
+*,
+::before,
+::after {
+  box-sizing: border-box;
 }
 
 @media screen and (min-width: 300px) and (max-width: 800px) {
@@ -77,11 +79,10 @@ img:hover {
 /*Area de la Barra de Navegacion*/
 /*-----------------------------*/
 
-*
-{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 
@@ -140,28 +141,32 @@ header {
 }
 
 /*Menu Desplegable*/
-.nav__items_conteiner{
+.nav__items_conteiner {
   display: inline-block;
   position: relative;
   text-decoration: none;
 }
 
-.nav__items_conteiner li, li a{
+.nav__items_conteiner li,
+li a {
   color: #fff;
   text-decoration: none;
   align-items: center;
   margin-right: 10px;
 }
+
 .nav__items_categorias {
   display: none;
   position: absolute;
   width: 100%;
   overflow: auto;
 }
+
 .nav__items_conteiner:hover .nav__items_categorias {
   display: block;
 }
-.nav__items_categorias a{
+
+.nav__items_categorias a {
   font-size: 15px;
   display: block;
   color: #fff;
@@ -180,7 +185,7 @@ header {
   display: var(--show, none);
 }
 
-header .textos-header{
+header .textos-header {
   display: flex;
   height: 390px;
   width: 100%;
@@ -190,21 +195,21 @@ header .textos-header{
   text-align: center;
 }
 
-.textos-header h1{
+.textos-header h1 {
   font-size: 50px;
   font-family: Anders;
-  color:#fff;
+  color: #fff;
 }
 
-.textos-header h2{
+.textos-header h2 {
   font-size: 23px;
   font-weight: 300;
   font-family: 'Poppins', sans-serif;
   padding: 14px;
-  color:#fff;
+  color: #fff;
 }
 
-.wave{
+.wave {
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -215,28 +220,29 @@ header .textos-header{
 /*Area de Producto Inicio Pagina*/
 /*-----------------------------*/
 
-main .sobre-nosotros{
+main .sobre-nosotros {
   padding: 30px 0 60px 0;
 }
-.contenedor-sobre-nosotros{
+
+.contenedor-sobre-nosotros {
   display: flex;
   justify-content: space-evenly;
 }
 
-.imagen-about-us{
+.imagen-about-us {
   width: 48%;
 }
 
-.ubicacion-mapa img{
+.ubicacion-mapa img {
   width: 99%;
   padding: 5px;
 }
 
-.sobre-nosotros .contenido-textos{
+.sobre-nosotros .contenido-textos {
   width: 48%;
 }
 
-.contenido-textos h3{
+.contenido-textos h3 {
   color: #fff;
   margin-bottom: 15px;
   font-family: Lugrasimo-Regular;
@@ -244,7 +250,7 @@ main .sobre-nosotros{
   border-radius: 200px;
 }
 
-.contenido-textos h3 span{
+.contenido-textos h3 span {
   background: rgba(0, 128, 255, 0.808);
   color: #fff;
   border-radius: 50%;
@@ -257,7 +263,8 @@ main .sobre-nosotros{
   margin-right: 5px;
 }
 
-.contenido-textos p, a{
+.contenido-textos p,
+a {
   padding: 0px 0px 30px 15px;
   font-weight: 300;
   text-align: justify;
@@ -268,7 +275,7 @@ main .sobre-nosotros{
   color: #070606;
 }
 
-.contenido-textos a{
+.contenido-textos a {
   color: rgba(0, 128, 255, 0.808);
 }
 
@@ -276,17 +283,17 @@ main .sobre-nosotros{
 /*Area de Ofrecer Servicios*/
 /*------------------------*/
 
-.about-services{
+.about-services {
   padding-bottom: 20px;
 }
 
-.servicio-cont{
-  display:flex;
+.servicio-cont {
+  display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.servicio-ind{
+.servicio-ind {
   width: 30%;
   font-size: 14px;
   text-align: center;
@@ -294,16 +301,17 @@ main .sobre-nosotros{
   color: rgba(0, 128, 255, 0.5);
 }
 
-.servicio-ind img{
+.servicio-ind img {
   width: 75%;
 }
 
-.servicio-ind h3{
+.servicio-ind h3 {
   margin: 10px;
   padding: 4px;
 }
 
-.servicio-ind p, a{
+.servicio-ind p,
+a {
   text-decoration: none;
   font-weight: 300;
   padding: 5px;
@@ -313,36 +321,37 @@ main .sobre-nosotros{
   font-family: Finlandica-Italic-VariableFont_wght;
 }
 
-.servicio-ind a:hover{
+.servicio-ind a:hover {
   -webkit-transform: scale(1.3);
   transform: scale(1.3);
   color: rgba(202, 30, 73, 0.877);
 }
 
 
-@media screen and (max-width:900px){
-  header{
-      background-position: center;
+@media screen and (max-width:900px) {
+  header {
+    background-position: center;
   }
 
   /* servicios */
 
-  .servicio-cont{
-      justify-content: center;
-      flex-direction: column;
+  .servicio-cont {
+    justify-content: center;
+    flex-direction: column;
   }
 
-  .servicio-ind{
-      width: 100%;
-      text-align: center;
+  .servicio-ind {
+    width: 100%;
+    text-align: center;
   }
 
-  .servicio-ind:nth-child(1), .servicio-ind:nth-child(2){
-      margin-bottom: 60px;
+  .servicio-ind:nth-child(1),
+  .servicio-ind:nth-child(2) {
+    margin-bottom: 60px;
   }
 
-  .servicio-cont-image img{
-      width: 50%;
+  .servicio-cont-image img {
+    width: 50%;
   }
 }
 
@@ -350,14 +359,14 @@ main .sobre-nosotros{
 /*Area del Footer*/
 /*--------------*/
 
-footer{
+footer {
   background: #413e41;
   padding: 60px 0 30px 0;
   margin: auto;
   overflow: hidden;
 }
 
-.contenedor-footer{
+.contenedor-footer {
   display: flex;
   width: 90%;
   justify-content: space-evenly;
@@ -366,24 +375,24 @@ footer{
   border-bottom: 1px solid #ccc;
 }
 
-.content-foo{
+.content-foo {
   text-align: center;
   font-family: Lugrasimo-Regular;
   font-size: 15px;
 }
 
-.content-foo h4{
+.content-foo h4 {
   color: #f2f2f2;
   border-bottom: 3px solid rgba(0, 128, 255, 0.5);
   padding-bottom: 5px;
   margin-bottom: 10px;
 }
 
-.content-foo p{
+.content-foo p {
   color: #f2f2f2;
 }
 
-.titulo-final{
+.titulo-final {
   text-align: center;
   font-size: 16px;
   margin: 12px 0 0 0;
@@ -391,27 +400,27 @@ footer{
   font-family: Anders;
 }
 
-.content-foo a{
+.content-foo a {
   text-decoration: none;
   color: #fff;
   padding: 5px;
 }
 
-.content-foo .enlaces a{
+.content-foo .enlaces a {
   text-decoration: none;
   color: #fff;
   font-family: Lugrasimo-Regular;
   font-size: 16px;
 }
 
-.content-foo .enlaces a{
+.content-foo .enlaces a {
   background-color: rgba(0, 128, 255, 0.5);
   color: white;
   padding: 15px 25px;
   text-decoration: none;
 }
 
-.content-foo .enlaces a:hover{
+.content-foo .enlaces a:hover {
   background-color: #1a73cc;
   padding: 15px 25px;
   -webkit-transform: scale(1.3);
@@ -419,14 +428,14 @@ footer{
   color: white;
 }
 
-.content-foo a:hover{
+.content-foo a:hover {
   -webkit-transform: scale(1.3);
   transform: scale(1.3);
   color: rgba(202, 30, 73, 0.877);
   padding: 5px;
 }
 
-.wave2{
+.wave2 {
   position: relative;
   bottom: 0;
   width: 100%;
@@ -436,26 +445,26 @@ footer{
 /*Area de Todo Inicio, Menu y Footer*/
 /*---------------------------------*/
 
-@media screen and (max-width:900px){
-  header{
-      background-position: center;
+@media screen and (max-width:900px) {
+  header {
+    background-position: center;
   }
 
-  .contenedor-sobre-nosotros{
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+  .contenedor-sobre-nosotros {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
-  .sobre-nosotros .contenido-textos{
-      width: 90%;
+  .sobre-nosotros .contenido-textos {
+    width: 90%;
   }
 
-  .imagen-about-us{
-      width: 90%;
+  .imagen-about-us {
+    width: 90%;
   }
 
-  .ubicacion-mapa img{ 
+  .ubicacion-mapa img {
     width: 100%;
     height: 100%;
     margin: 2px;
@@ -463,43 +472,45 @@ footer{
 
   /* Galeria */
 
-  .imagen-port{
-      width: 44%;
+  .imagen-port {
+    width: 44%;
   }
 
   /* servicios */
 
-  .servicio-cont{
-      justify-content: center;
-      flex-direction: column;
+  .servicio-cont {
+    justify-content: center;
+    flex-direction: column;
   }
 
-  .servicio-ind{
-      width: 100%;
-      text-align: center;
+  .servicio-ind {
+    width: 100%;
+    text-align: center;
   }
 
-  .servicio-ind:nth-child(1), .servicio-ind:nth-child(2){
-      margin-bottom: 60px;
+  .servicio-ind:nth-child(1),
+  .servicio-ind:nth-child(2) {
+    margin-bottom: 60px;
   }
 
-  .servicio-cont-image img{
-      width: 50%;
-      padding: 12px;
+  .servicio-cont-image img {
+    width: 50%;
+    padding: 12px;
   }
 }
 
-@media screen and (max-width:600px){
+@media screen and (max-width:600px) {
   .nav__menu {
     display: block;
-}
-.nav__link--menu a{
-  border-bottom: 3px solid rgba(0, 128, 255, 0.5);
-  padding-bottom: 5px;
-  margin-bottom: 10px;
-}
+  }
 
-.nav__link--menu{
+  .nav__link--menu a {
+    border-bottom: 3px solid rgba(0, 128, 255, 0.5);
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+  }
+
+  .nav__link--menu {
     position: fixed;
     background-color: #413e41;
     top: 0;
@@ -516,70 +527,70 @@ footer{
     opacity: 0;
     pointer-events: none;
     transition: .7s opacity;
-}
+  }
 
-.nav__link--show{
+  .nav__link--show {
     --show: block;
-    opacity:1;
+    opacity: 1;
     pointer-events: unset;
-}
+  }
 
-.nav__close{
+  .nav__close {
     position: absolute;
     top: 30px;
     right: 30px;
     width: 30px;
     cursor: pointer;
-}
-
-  .textos-header h1{
-      font-size: 35px;
-      padding: 4px;
   }
 
-  .textos-header h2{
-      font-size: 20px;
+  .textos-header h1 {
+    font-size: 35px;
+    padding: 4px;
+  }
+
+  .textos-header h2 {
+    font-size: 20px;
   }
 
   /* ABOUT US */
 
-  .imagen-about-us{
-      margin-bottom: 60px;
-      width: 99%;
-  }
-
-  .imagen-about-ubicacion{
+  .imagen-about-us {
     margin-bottom: 60px;
     width: 99%;
   }
 
-  .sobre-nosotros .contenido-textos{
-      width: 95%;
+  .imagen-about-ubicacion {
+    margin-bottom: 60px;
+    width: 99%;
+  }
+
+  .sobre-nosotros .contenido-textos {
+    width: 95%;
   }
 
   /* Footer */
 
-  .contenedor-footer{
-      flex-direction: column;
-      border: none;
+  .contenedor-footer {
+    flex-direction: column;
+    border: none;
   }
 
-  .content-foo{
-      margin-bottom: 20px;
-      text-align: center;
+  .content-foo {
+    margin-bottom: 20px;
+    text-align: center;
   }
 
-  .content-foo h4{
-      border: none;
+  .content-foo h4 {
+    border: none;
   }
 
-  .content-foo p{
-      color: #f2f2f2;
-      border-bottom: 1px solid rgba(0, 128, 255, 0.808);
-      padding-bottom: 20px;
+  .content-foo p {
+    color: #f2f2f2;
+    border-bottom: 1px solid rgba(0, 128, 255, 0.808);
+    padding-bottom: 20px;
   }
 
-  .titulo-final{
-      font-size: 20px;
+  .titulo-final {
+    font-size: 20px;
   }
 }

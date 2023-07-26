@@ -1,36 +1,36 @@
 /*Menu Nav Accion de Moviles*/
-(function(){
-  const openButton = document.querySelector('.nav__menu');
-  const menu = document.querySelector('.nav__link');
-  const closeMenu = document.querySelector('.nav__close');
+(function () {
+    const openButton = document.querySelector('.nav__menu');
+    const menu = document.querySelector('.nav__link');
+    const closeMenu = document.querySelector('.nav__close');
 
-  openButton.addEventListener('click', ()=>{
-      menu.classList.add('nav__link--show');
-  });
+    openButton.addEventListener('click', () => {
+        menu.classList.add('nav__link--show');
+    });
 
-  closeMenu.addEventListener('click', ()=>{
-      menu.classList.remove('nav__link--show');
-  });
+    closeMenu.addEventListener('click', () => {
+        menu.classList.remove('nav__link--show');
+    });
 })();
 
 
 /*Salir de Sesion del Sistema*/
 const user = JSON.parse(localStorage.getItem('login_success')) || false
-if(!user){
+if (!user) {
 }
 
 const logout = document.querySelector('#logout')
 
-logout.addEventListener('click', ()=>{
+logout.addEventListener('click', () => {
     alert('Vuelve Pronto Gracias por Todo!')
     localStorage.removeItem('login_success')
 })
 
 const login_success = JSON.parse(localStorage.getItem('login_success'))
 if (login_success) {
-const mensajeBienvenida = document.querySelector('#mensaje-bienvenida')
-mensajeBienvenida.innerText = `Bienvenido, ${login_success.usuario}!`;
-localStorage.removeItem('login_success')
+    const mensajeBienvenida = document.querySelector('#mensaje-bienvenida')
+    mensajeBienvenida.innerText = `Bienvenido, ${login_success.usuario}!`;
+    localStorage.removeItem('login_success')
 }
 
 const logoutButton = document.querySelector('#logout')
@@ -46,4 +46,4 @@ logoutButton.addEventListener('click', () => {
 function toggleDescripcion(id) {
     var descripcion = document.querySelector(`#${id}`);
     descripcion.classList.toggle('visible');
-  }
+}

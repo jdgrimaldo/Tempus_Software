@@ -1,0 +1,160 @@
+.catalogo-section {
+    text-align: center;
+  }
+  .imagen {
+    width: 100%;
+    height: auto;
+  }
+  
+  h1.titulo {
+    color: rgba(0, 128, 255, 0.5);
+    font-family: Lugrasimo-Regular;
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  
+  h1.texto-final {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: rgba(0, 128, 255, 0.5);
+    font-family: Lugrasimo-Regular;
+    text-align: center;
+  }
+  
+  .catalogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .producto {
+    width: 33.33%;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+  
+  .producto:hover {
+    transform: scale(1.05);
+  }
+  
+  .descripcion {
+    margin-bottom: 10px;
+    max-height: none;
+    font-family: Finlandica-Italic-VariableFont_wght;
+    opacity: 0;
+    transition: opacity 300ms, max-height 300ms;
+    background-color: rgb(10, 129, 165);
+    border-radius: 10px;
+    padding: 10px;
+    color: #ffffff;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+  }
+  
+  .descripcion.visible {
+    opacity: 1;
+    max-height: 250px;
+  }
+  
+  h3.nombre {
+    color: rgba(0, 128, 255, 0.5);
+    font-family: Lugrasimo-Regular;
+    font-size: 15px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .descripcion p.caracteristicas {
+    font-weight: bold;
+  }
+  
+  .toca {
+    font-family: Lugrasimo-Regular;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .producto:hover .toca {
+    opacity: 0.8;
+  }
+  
+  @media screen and (max-width: 725px) {
+    .catalogo {
+      flex-direction: column;
+      align-items: initial;
+      margin-bottom: 30px;
+    }
+  
+    .producto {
+      width: 100%;
+      margin-bottom: 20px;
+      text-align: initial;
+    }
+  
+    h1.texto-final {
+      font-size: 20px;
+      margin-bottom: 20px;
+      color: rgba(0, 128, 255, 0.5);
+      font-family: Lugrasimo-Regular;
+    }
+    .catalogo {
+      flex-direction: column;
+    }
+    .producto {
+      width: 100%;
+    }
+  }
+  
+  @media screen and (max-width: 725px) {
+    h1.titulo {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+  
+    h3.nombre {
+      font-size: 13px;
+      margin-bottom: 5px;
+      text-align: center;
+    }
+  
+    .toca {
+      font-family: Lugrasimo-Regular;
+      background-color: rgba(0, 0, 0, 0.7);
+      color: #fff;
+      padding: 10px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+    
+    .producto:hover .toca {
+      opacity: 1;
+    }
+    .aparicion
+  {
+    font-family: Lugrasimo-Regular;
+    opacity: 1;
+    font-size: 14px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+  }
+  }
+  .aparicion
+  {
+    display: block;
+    font-family: Lugrasimo-Regular;
+    opacity: 0.5;
+    font-size: 14px;
+    color: #faf4f4;
+    text-align: center;
+  }
+  

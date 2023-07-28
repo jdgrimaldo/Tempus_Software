@@ -1,8 +1,8 @@
 .slider-automatico {
   position: relative;
   width: 90%;
-  margin: auto;
-  height: auto;
+  margin: 5%;
+  height: 590px;
   overflow: hidden;
 }
 

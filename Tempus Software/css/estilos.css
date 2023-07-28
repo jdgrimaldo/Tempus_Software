@@ -103,6 +103,7 @@ header {
   height: 100%;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .nav__title {
@@ -118,7 +119,7 @@ header {
   display: grid;
   grid-auto-flow: column;
   grid-auto-columns: max-content;
-  gap: 20px;
+  gap: 15px;
 }
 
 .nav__items {

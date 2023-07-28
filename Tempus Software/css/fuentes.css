@@ -40,3 +40,8 @@
   font-family: Roboto-Italic;
   src: url(../fuentes/Roboto-Italic.ttf);
 }
+
+@font-face {
+  font-family: Poppins;
+  src: url(../fuentes/Poppins.ttf);
+}

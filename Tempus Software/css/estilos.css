@@ -25,8 +25,6 @@ body {
   }
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
-
 
 /*----------------------*/
 /*Area de Inicio Pagina*/
@@ -41,7 +39,7 @@ body {
 }
 
 .titulo {
-  color: rgba(0, 128, 255, 0.5);
+  color: #1d9dcc;
   font-size: 30px;
   font-family: Lugrasimo-Regular;
   text-align: center;
@@ -285,6 +283,7 @@ a {
 
 .about-services {
   padding-bottom: 20px;
+  background-color: #ffffff;
 }
 
 .servicio-cont {

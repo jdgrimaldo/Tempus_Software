@@ -4,6 +4,9 @@
   margin: auto;
   overflow: hidden;
 }
+.fondo-slider{
+  background-color: #ffffff;
+}
 
 .slide img {
   padding: 6px;

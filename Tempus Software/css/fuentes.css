@@ -45,3 +45,8 @@
   font-family: Poppins;
   src: url(../fuentes/Poppins.ttf);
 }
+
+@font-face {
+  font-family: Open Sans;
+  src: url(../fuentes/Open\ Sans.ttf);
+}

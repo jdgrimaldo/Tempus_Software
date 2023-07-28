@@ -593,12 +593,3 @@ footer {
     font-size: 20px;
   }
 }
-
-.video-conteiner video{
-  position: relative;
-  width: 90%;
-  margin: 5%;
-  height: 590px;
-  overflow: hidden;
-  background-color: #413e41;
-}

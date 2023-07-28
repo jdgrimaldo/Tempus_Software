@@ -14,21 +14,21 @@
   animation: rotacion 30s infinite;
 }
 
-.slide {
+.slide-2 {
   width: 60.666%;
   height: 100%;
   margin: 12px;
-  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  border: 6px solid #413e41;
 }
 
 .slide1 {
-  background-image: url(../imagenes/slider/cliente1.jpg);
+  background-image: url(../imagenes/slider/cliente2.jpg);
 }
 
 .slide2 {
-  background-image: url(../imagenes/slider/cliente2.jpg);
+  background-image: url(../imagenes/slider/cliente1.jpg);
 }
 
 .slide3 {
@@ -40,7 +40,7 @@
 }
 
 .slide5 {
- background-image: url(../imagenes/slider/lapto2.jpg);
+  background-image: url(../imagenes/slider/lapto2.jpg);
 }
 
 .slide6 {
@@ -49,21 +49,51 @@
 
 
 @keyframes rotacion {
-	0% {margin-left: 0;}
-	17% {margin-left: 0;}
-	
-	18% {margin-left: -100%;}
-	33% {margin-left: -100%;}
-	
-	34% {margin-left: -200%;}
-	49% {margin-left: -200%;}
-	
-	50% {margin-left: -300%;}
-	66% {margin-left: -300%;}
+  0% {
+    margin-left: 0;
+  }
 
-  67% {margin-left: -400%;}
-	83% {margin-left: -400%;}
-	
-	84% {margin-left: -500%;}
-	100% {margin-left: -500%;}
+  17% {
+    margin-left: 0;
+  }
+
+  18% {
+    margin-left: -100%;
+  }
+
+  33% {
+    margin-left: -100%;
+  }
+
+  34% {
+    margin-left: -200%;
+  }
+
+  49% {
+    margin-left: -200%;
+  }
+
+  50% {
+    margin-left: -300%;
+  }
+
+  66% {
+    margin-left: -300%;
+  }
+
+  67% {
+    margin-left: -400%;
+  }
+
+  83% {
+    margin-left: -400%;
+  }
+
+  84% {
+    margin-left: -500%;
+  }
+
+  100% {
+    margin-left: -500%;
+  }
 }

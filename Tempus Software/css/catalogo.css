@@ -26,11 +26,12 @@ h1.texto-final {
 }
 
 .producto {
-  width: 33.33%;
-  padding: 10px;
+  width: 30.33%;
+  padding: 9px;
   box-sizing: border-box;
   text-align: center;
   transition: all 0.3s ease;
+  margin: 2px;
 }
 
 .producto:hover {

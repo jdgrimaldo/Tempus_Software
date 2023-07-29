@@ -64,8 +64,8 @@ nav a:hover {
 }
 
 .textos-header h1:hover {
-  -webkit-transform: scale(4.3);
-  transform: scale(1.1);
+  -webkit-transform: scale(0.3);
+  transform: scale(1);
   color: rgba(202, 30, 73, 0.877);
 }
 
@@ -198,10 +198,11 @@ header .textos-header {
   font-size: 50px;
   font-family: Anders;
   color: #fff;
+  margin: 2px;
 }
 
 .textos-header h2 {
-  font-size: 23px;
+  font-size: 22px;
   font-weight: 300;
   font-family: 'Poppins', sans-serif;
   padding: 14px;

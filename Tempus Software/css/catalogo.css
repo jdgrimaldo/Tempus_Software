@@ -39,14 +39,14 @@ h1.texto-final {
 }
 
 .descripcion {
-  margin-bottom: 10px;
-  max-height: none;
+  margin-bottom: 1px;
+  max-height: 0.5px;
   font-family: Finlandica-Italic-VariableFont_wght;
   opacity: 0;
-  transition: opacity 300ms, max-height 300ms;
+  transition: opacity 10ms, max-height 10ms;
   background-color: rgba(10, 129, 165, 0);
-  border-radius: 10px;
-  padding: 10px;
+  border-radius: 1px;
+  padding: 1px;
   color: #ffffff02;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0);
 }

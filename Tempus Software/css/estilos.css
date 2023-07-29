@@ -594,3 +594,19 @@ footer {
     font-size: 20px;
   }
 }
+
+.titulo a{
+  background-color: #1a73cc;
+  color: white;
+  padding: 20px;
+  text-decoration: none;
+  margin: 20px;
+}
+
+.titulo a:hover {
+  background-color: rgba(0, 128, 255, 0.808);
+  padding: 21px;
+  -webkit-transform: scale(4.3);
+  transform: scale(1.3);
+  color: white;
+}

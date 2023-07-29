@@ -24,27 +24,54 @@
 }
 
 .slide1 {
-  background-image: url(../imagenes/slider/cliente2.jpg);
+  background-image: url(../imagenes/slider/cliente1-pc.jpg);
 }
 
 .slide2 {
-  background-image: url(../imagenes/slider/cliente1.jpg);
+  background-image: url(../imagenes/slider/cliente2-pc.jpeg);
 }
 
 .slide3 {
-  background-image: url(../imagenes/slider/cliente4.jpg);
+  background-image: url(../imagenes/slider/cliente3-pc.jpeg);
 }
 
 .slide4 {
-  background-image: url(../imagenes/slider/lapto1.jpg);
+  background-image: url(../imagenes/slider/cliente4-pc.jpeg);
 }
 
 .slide5 {
-  background-image: url(../imagenes/slider/lapto2.jpg);
+  background-image: url(../imagenes/slider/cliente5-pc.jpg);
 }
 
 .slide6 {
-  background-image: url(../imagenes/slider/lapto4.jpg);
+  background-image: url(../imagenes/slider/cliente6-pc.png);
+}
+
+@media screen and (max-width:500px) {
+  .slide1 {
+    background-image: url(../imagenes/slider/cliente1-movil.jpeg);
+  }
+
+  .slide2 {
+    background-image: url(../imagenes/slider/cliente2-movil.jpeg);
+  }
+
+  .slide3 {
+    background-image: url(../imagenes/slider/cliente3-movil.jpeg);
+  }
+
+  .slide4 {
+    background-image: url(../imagenes/slider/cliente4-movil.png);
+  }
+
+  .slide5 {
+    background-image: url(../imagenes/slider/cliente5-movil.jpeg);
+  }
+
+  .slide6 {
+    background-image: url(../imagenes/slider/cliente6-movil.jpg);
+  }
+
 }
 
 

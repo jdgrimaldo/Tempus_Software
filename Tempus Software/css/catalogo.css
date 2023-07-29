@@ -44,16 +44,11 @@ h1.texto-final {
   font-family: Finlandica-Italic-VariableFont_wght;
   opacity: 0;
   transition: opacity 300ms, max-height 300ms;
-  background-color: rgb(10, 129, 165);
+  background-color: rgba(10, 129, 165, 0);
   border-radius: 10px;
   padding: 10px;
-  color: #ffffff;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
-}
-
-.descripcion.visible {
-  opacity: 1;
-  max-height: 250px;
+  color: #ffffff02;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0);
 }
 
 h3.nombre {
@@ -63,11 +58,6 @@ h3.nombre {
   margin-bottom: 10px;
   text-align: center;
 }
-
-.descripcion p.caracteristicas {
-  font-weight: bold;
-}
-
 .toca {
   font-family: Lugrasimo-Regular;
   position: absolute;
@@ -87,6 +77,13 @@ h3.nombre {
 }
 
 @media screen and (max-width: 725px) {
+  .descripcion.visible {
+    opacity: 1;
+    max-height: 250px;
+  }
+  .descripcion p.caracteristicas {
+    font-weight: bold;
+  }
   .catalogo {
     flex-direction: column;
     align-items: initial;
@@ -116,6 +113,18 @@ h3.nombre {
 }
 
 @media screen and (max-width: 725px) {
+  .descripcion {
+    margin-bottom: 10px;
+    max-height: none;
+    font-family: Finlandica-Italic-VariableFont_wght;
+    opacity: 1;
+    transition: opacity 300ms, max-height 300ms;
+    background-color: rgb(10, 129, 165);
+    border-radius: 10px;
+    padding: 10px;
+    color: #ffffff;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+  }
   h1.titulo {
     font-size: 24px;
     margin-bottom: 20px;
@@ -129,8 +138,8 @@ h3.nombre {
 
   .toca {
     font-family: Lugrasimo-Regular;
-    background-color: rgba(0, 0, 0, 0.7);
-    color: #fff;
+    background-color: rgba(0, 0, 0, 0);
+    color: #ffffff00;
     padding: 10px;
     font-size: 14px;
     font-weight: bold;
@@ -152,8 +161,9 @@ h3.nombre {
 .aparicion {
   display: block;
   font-family: Lugrasimo-Regular;
-  opacity: 0.5;
+  opacity: 1;
   font-size: 14px;
   color: #faf4f4;
   text-align: center;
 }
+

@@ -116,6 +116,12 @@ h3.nombre {
     text-align: initial;
   }
 
+  .producto img{
+    display: block;
+    width: 60%;
+    margin: auto;
+  }
+
   h1.texto-final {
     font-size: 20px;
     margin-bottom: 20px;

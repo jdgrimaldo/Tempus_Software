@@ -1,7 +1,8 @@
 .slider-automatico {
   position: relative;
-  width: 90%;
-  margin: 5%;
+  width: 93%;
+  margin: auto;
+  padding: 20px;
   height: 600px;
   overflow: hidden;
 }
@@ -17,10 +18,12 @@
 .slide-2 {
   width: 60.666%;
   height: 100%;
-  margin: 12px;
+  margin: 20px;
   background-position: center;
   background-size: cover;
-  border: 2px solid #413e41;
+  background-color: #ffffff;
+  border: 2px solid #46A2FD;
+  color: #ffffff;
 }
 
 .slide1 {

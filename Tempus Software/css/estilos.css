@@ -46,6 +46,16 @@ body {
   margin-bottom: 60px;
 }
 
+.titulo-usuario{
+  color: rgba(0, 128, 255, 0.808);
+  font-size: 30px;
+  font-family: Lugrasimo-Regular;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
 /*-----------------------*/
 /*Area de Efectos Pagina*/
 /*---------------------*/
@@ -63,7 +73,7 @@ nav a:hover {
   color: rgba(202, 30, 73, 0.877);
 }
 
-.textos-header h1:hover {
+.textos-header h1, .titulo-usuario:hover {
   -webkit-transform: scale(0.3);
   transform: scale(1);
   color: rgba(202, 30, 73, 0.877);

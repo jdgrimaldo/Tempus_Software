@@ -2,7 +2,7 @@
   position: relative;
   width: 90%;
   margin: 5%;
-  height: 590px;
+  height: 600px;
   overflow: hidden;
 }
 
@@ -20,7 +20,7 @@
   margin: 12px;
   background-position: center;
   background-size: cover;
-  border: 6px solid #413e41;
+  border: 2px solid #413e41;
 }
 
 .slide1 {

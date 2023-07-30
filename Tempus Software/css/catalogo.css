@@ -32,6 +32,9 @@ h1.texto-final {
   text-align: center;
   transition: all 0.3s ease;
   margin: 2px;
+
+  border: 1px solid #46A2FD;
+  border-radius: 10px;
 }
 
 .producto:hover {
@@ -176,6 +179,13 @@ h3.nombre {
     background-color: rgba(0, 0, 0, 0.7);
     color: #fff;
   }
+
+  .producto img{
+    display: block;
+    width: 60%;
+    margin: auto;
+  }
+  
 }
 
 .aparicion {
@@ -197,5 +207,9 @@ h3.nombre {
   margin: 2px;
 }
 
-
+.producto img{
+  display: block;
+  width: 80%;
+  margin: auto;
+}
 

@@ -115,5 +115,4 @@ formulario__login.addEventListener('submit', (e) => {
 	}
 	localStorage.setItem('login_success', JSON.stringify(validUser))
 	window.location.href = '../index.html'
-
 })

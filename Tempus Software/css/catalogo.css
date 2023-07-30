@@ -1,7 +1,10 @@
+body{
+  background-color: #f2f2f2;
+}
+
 .catalogo-section {
   text-align: center;
 }
-
 
 h1.titulo {
   color: rgba(0, 128, 255, 0.5);

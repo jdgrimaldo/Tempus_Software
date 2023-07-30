@@ -227,6 +227,14 @@ main .sobre-nosotros {
 .contenedor-sobre-nosotros {
   display: flex;
   justify-content: space-evenly;
+  margin-bottom: 10px;
+    max-height: none;
+    font-family: Finlandica-Italic-VariableFont_wght;
+    background-color: #ccc;
+    border: 2px solid #46A2FD;
+    border-radius: 10px;
+    padding: 12px;
+    color: #ffffff;
 }
 
 .imagen-about-us {

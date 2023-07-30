@@ -73,7 +73,13 @@ nav a:hover {
   color: rgba(202, 30, 73, 0.877);
 }
 
-.textos-header h1, .titulo-usuario:hover {
+.textos-header h1:hover {
+  -webkit-transform: scale(0.3);
+  transform: scale(1);
+  color: rgba(202, 30, 73, 0.877);
+}
+
+.titulo-usuario:hover {
   -webkit-transform: scale(0.3);
   transform: scale(1);
   color: rgba(202, 30, 73, 0.877);

@@ -228,13 +228,17 @@ main .sobre-nosotros {
   display: flex;
   justify-content: space-evenly;
   margin-bottom: 10px;
-    max-height: none;
-    font-family: Finlandica-Italic-VariableFont_wght;
-    background-color: #ccc;
-    border: 2px solid #46A2FD;
-    border-radius: 10px;
-    padding: 12px;
-    color: #ffffff;
+  max-height: none;
+  font-family: Finlandica-Italic-VariableFont_wght;
+  background-color: #ffffff;
+  border: 2px solid #46A2FD;
+  border-radius: 10px;
+  padding: 12px;
+  color: #ffffff;
+}
+
+.contenedor-sobre-nosotros img:hover{
+  transform: scale(1.02);
 }
 
 .imagen-about-us {
@@ -300,12 +304,21 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  margin-bottom: 1px;
+    max-height: none;
+    font-family: Finlandica-Italic-VariableFont_wght;
+    background-color: #ffffff;
+    border: 2px solid #46A2FD;
+    border-radius: 10px;
+    padding: 12px;
 }
 
 .servicio-ind {
-  width: 30%;
-  font-size: 14px;
+  width: 32%;
+  font-size: 15px;
   text-align: center;
+  margin: 12px;
   font-family: Lugrasimo-Regular;
   color: rgba(0, 128, 255, 0.5);
 }
@@ -641,7 +654,7 @@ footer {
     padding: 12px 25px;
     text-decoration: none;
     text-align: center;
-    
+
   }
 
 

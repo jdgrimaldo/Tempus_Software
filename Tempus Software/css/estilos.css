@@ -237,17 +237,12 @@ main .sobre-nosotros {
   color: #ffffff;
 }
 
-.contenedor-sobre-nosotros img:hover{
+.contenedor-sobre-nosotros img:hover {
   transform: scale(1.02);
 }
 
 .imagen-about-us {
   width: 48%;
-}
-
-.ubicacion-mapa img {
-  width: 99%;
-  padding: 5px;
 }
 
 .sobre-nosotros .contenido-textos {
@@ -306,12 +301,12 @@ a {
   align-items: center;
 
   margin-bottom: 1px;
-    max-height: none;
-    font-family: Finlandica-Italic-VariableFont_wght;
-    background-color: #ffffff;
-    border: 2px solid #46A2FD;
-    border-radius: 10px;
-    padding: 12px;
+  max-height: none;
+  font-family: Finlandica-Italic-VariableFont_wght;
+  background-color: #ffffff;
+  border: 2px solid #46A2FD;
+  border-radius: 10px;
+  padding: 12px;
 }
 
 .servicio-ind {
@@ -486,10 +481,9 @@ footer {
     width: 90%;
   }
 
-  .ubicacion-mapa img {
-    width: 100%;
-    height: 100%;
-    margin: 2px;
+  .ubicacion-mapa {
+    padding: 12px;
+    margin: 20px;
   }
 
   /* Galeria */

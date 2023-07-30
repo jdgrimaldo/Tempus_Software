@@ -32,7 +32,7 @@ const validarFormulario = (e) => {
 			validarCampo(expresiones.password, e.target, "password");
 			break;
 		case "telefono":
-			validarCampo(expresiones.password, e.target, "telefono");
+			validarCampo(expresiones.telefono, e.target, "telefono");
 			break;
 	}
 }
@@ -68,17 +68,29 @@ formulario__register.addEventListener('submit', (e) => {
 	const telefono = document.querySelector('#telefono').value.trim();
 	const password = document.querySelector('#password').value.trim();
 
-	const Users = JSON.parse(localStorage.getItem('users')) || []
-	const isUserRegistered = Users.find(user => user.correo === correo && user.telefono === telefono)
-	if (isUserRegistered) {
-		return alert('El usuario ya esta registado!')
+	if (usuario === "" || correo === "" || telefono === "" || password === "") {
+		return alert('Los campos no pueden estar vacíos!');
 	}
 
-	Users.push({ usuario: usuario, correo: correo, password: password, telefono: telefono })
-	localStorage.setItem('users', JSON.stringify(Users))
-	window.location.href = 'login.html'
+	const Users = JSON.parse(localStorage.getItem('users')) || [];
+	const isUserRegistered = Users.find(user => user.correo === correo && user.telefono === telefono);
 
-})
+	if (isUserRegistered) {
+		return alert('El usuario ya está registrado!');
+	}
+
+	Users.push({ usuario: usuario, correo: correo, password: password, telefono: telefono });
+	localStorage.setItem('users', JSON.stringify(Users));
+
+	if (!isUserRegistered) {
+		document.getElementById("formulario__mensaje-exito").classList.add("formulario__mensaje-exito-activo");
+		setTimeout(() => {
+			document.getElementById("formulario__mensaje-exito").classList.remove("formulario__mensaje-exito-activo");
+		}, 5000);
+	}
+
+	window.location.href = 'login.html';
+});
 
 formulario.addEventListener("submit", (e) => {
 	e.preventDefault();

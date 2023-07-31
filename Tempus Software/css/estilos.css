@@ -98,7 +98,7 @@ nav a:hover {
 
 /* Efecto para las Img */
 img:hover {
-  filter: blur(3px);
+  filter: brightness(0.8);
 }
 
 

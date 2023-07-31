@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="shortcut icon" href="imagenes/fondo pagina1.png" type="image/x-icon">
   <link rel="stylesheet" type="text/css" href="css/estilos.css" />
+  <link rel="stylesheet" href="css/aos.css">
   <link rel="stylesheet" type="text/css" href="css/fuentes.css" />
   <link rel="stylesheet" href="css/catalogo.css">
   <link rel="stylesheet" href="iconos/fontawesome/css/all.css">
@@ -48,7 +49,7 @@
       </div>
     </nav>
     <section class="textos-header">
-      <h1 class="fa fa-beat-fade">Catalogo de Productos</h1>
+      <h1 data-aos="fade-down">Bienvenido al Area de Productos</h1>
       <h2>Somos una Empresa pequeña con el Proposito de Ayudar a Solucionar tus Problemas</h2>
     </section>
     <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
@@ -60,7 +61,7 @@
   <main>
     <section>
       <h1 class="titulo">Productos</h1>
-      <div class="catalogo">
+      <div class="catalogo" data-aos="fade-up">
         <div class="producto" onclick="toggleDescripcion('producto1')">
           <figure>
             <img src="imagenes/ventas/componentes/ddr3.png" width="330" height="300" alt="Producto 1" class="imagen">
@@ -331,12 +332,12 @@
     <h1 class="texto-final">"Siempre trabajando con la mejor tecnologia del mercado"</h1>
     <br><br>
   </main>
-  <div class="wave2" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
-      style="height: 100%; width: 100%;">
+  <div class="wave2" data-aos="fade-up" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150"
+      preserveAspectRatio="none" style="height: 100%; width: 100%;">
       <path d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
         style="stroke: none; fill: #413e41;"></path>
     </svg></div>
-  <footer>
+  <footer data-aos="fade-up">
 
     <div class="contenedor-footer">
       <div class="content-foo">
@@ -370,8 +371,10 @@
     </div>
     <h2 class="titulo-final">&copy; Tempus Software and Hardware 2023 | Todos los Derechos Reservados</h2>
   </footer>
+  <script src="js/aos.js"></script>
   <script src="js/menu desplegable.js"></script>
   <script src="js/Login_out.js"></script>
+  <script>  AOS.init();  </script>
 </body>
 
 </html>

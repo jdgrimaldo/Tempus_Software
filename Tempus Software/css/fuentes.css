@@ -1,6 +1,4 @@
-/*-------------------------*/
-/*AREA DE INSERTAR FUENTES*/
-/*-----------------------*/
+/* Donde se Declaran las Fuentes a Usar Offline */
 @font-face {
   font-family: Righteous-Regular;
   src: url(../fuentes/Righteous-Regular.ttf);

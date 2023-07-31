@@ -1,20 +1,27 @@
-/*------------------------------------------*/
-/*Area de Body y Funcionalidad para Moviles*/
-/*----------------------------------------*/
-
+/* -------------------------------------------- */
+/*--Area de Body y Funcionalidad para Moviles--*/
+/* Tamaño y Color de Fondo */
 body {
   width: 100%;
   height: 100%;
   background-color: #ffffff;
 }
 
-
+/* Pequeño Normalice 1 */
 *,
 ::before,
 ::after {
   box-sizing: border-box;
 }
 
+/* Pequeño Normalice 2 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Escalas para Moviles */
 @media screen and (min-width: 300px) and (max-width: 800px) {
   body {
     font-size: 0.8em;
@@ -26,10 +33,9 @@ body {
 }
 
 
-/*----------------------*/
-/*Area de Inicio Pagina*/
-/*--------------------*/
-
+/* -------------------------- */
+/*--Area de Titulos y Demas--*/
+/* Contenedor de Contenido de la Pagina */
 .contenedor {
   padding: 60px 0;
   width: 90%;
@@ -38,6 +44,7 @@ body {
   overflow: hidden;
 }
 
+/* Titulos Principales de la Pagina Index/Laptos/Productos/Usuarios */
 .titulo {
   color: #1d9dcc;
   font-size: 30px;
@@ -46,7 +53,8 @@ body {
   margin-bottom: 60px;
 }
 
-.titulo-usuario{
+/* Titulo Segundario de Usuarios */
+.titulo-usuario {
   color: rgba(0, 128, 255, 0.808);
   font-size: 30px;
   font-family: Lugrasimo-Regular;
@@ -56,10 +64,10 @@ body {
   display: flex;
 }
 
-/*-----------------------*/
-/*Area de Efectos Pagina*/
-/*---------------------*/
 
+/* --------------------------------------------- */
+/*--Efectos para la Pagina Img/Enlaces/Titulos--*/
+/* Efecto Barra de Navegacion */
 nav a:hover {
   -webkit-transform: scale(1.3);
   transform: scale(1);
@@ -67,39 +75,36 @@ nav a:hover {
   border-bottom: 1px solid rgba(202, 30, 73, 0.877);
 }
 
+/* Efectos de los Contenedores solo para Enlaces */
 .contenido-textos a:hover {
   -webkit-transform: scale(4.3);
   transform: scale(1.3);
   color: rgba(202, 30, 73, 0.877);
 }
 
+/* Efecto Titulos Mayores de la Pagina Index/Laptos/Productos */
 .textos-header h1:hover {
   -webkit-transform: scale(0.3);
   transform: scale(1);
   color: rgba(202, 30, 73, 0.877);
 }
 
+/* Efecto Titulo Segundario para Usuario */
 .titulo-usuario:hover {
   -webkit-transform: scale(0.3);
   transform: scale(1);
   color: rgba(202, 30, 73, 0.877);
 }
 
+/* Efecto para las Img */
 img:hover {
   filter: blur(3px);
 }
 
-/*-------------------------------*/
-/*Area de la Barra de Navegacion*/
-/*-----------------------------*/
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-
+/* -------------------------------------- */
+/*--Barra de Navegacion y Textos Header--*/
+/* Header Posicion/Tamaño/Img */
 header {
   width: 100%;
   height: 720px;
@@ -114,7 +119,7 @@ header {
   grid-template-rows: 100px;
 }
 
-
+/* Navegacion */
 .nav {
   height: 100%;
   display: flex;
@@ -122,6 +127,7 @@ header {
   justify-content: center;
 }
 
+/* Parte del Logo Nav */
 .nav__title {
   height: 117px;
   width: 190px;
@@ -129,6 +135,7 @@ header {
   margin-left: 40px;
 }
 
+/* Contenedor de Nav ul */
 .nav__link {
   margin-left: auto;
   padding: 0;
@@ -138,16 +145,19 @@ header {
   gap: 15px;
 }
 
+/* Enlaces li */
 .nav__items {
   list-style: none;
 }
 
+/* Enlaces o Secciones de la Barra Index/Laptos/Productos/Usuarios a */
 .nav__links {
   color: #fff;
   text-decoration: none;
   font-family: 'Poppins', sans-serif;
 }
 
+/* Menu Para Moviles Solo para La Img Menu */
 .nav__menu {
   margin-left: auto;
   cursor: pointer;
@@ -155,13 +165,14 @@ header {
   margin-right: 10px;
 }
 
-/*Menu Desplegable*/
+/* Contenedor para el Menu Desplegable */
 .nav__items_conteiner {
   display: inline-block;
   position: relative;
   text-decoration: none;
 }
 
+/* Para la Parte de la Opcion a Desplegar */
 .nav__items_conteiner li,
 li a {
   color: #fff;
@@ -170,6 +181,7 @@ li a {
   margin-right: 10px;
 }
 
+/* Contenedor para las Opciones Desplegables */
 .nav__items_categorias {
   display: none;
   position: absolute;
@@ -177,10 +189,12 @@ li a {
   overflow: auto;
 }
 
+/* Para que Pueda Desplegar el Usuario */
 .nav__items_conteiner:hover .nav__items_categorias {
   display: block;
 }
 
+/* Enlaces de Opcion Desplegable Cerrar Sesion/Iniciar Sesion/Usuario Activo */
 .nav__items_categorias a {
   font-size: 15px;
   display: block;
@@ -189,17 +203,18 @@ li a {
   text-decoration: none;
 }
 
-/*Fin*/
-
+/* Img del Menu Desplegable Abrir */
 .nav__img {
   display: block;
   width: 30px;
 }
 
+/* Img del Menu Desplegable Salir */
 .nav__close {
   display: var(--show, none);
 }
 
+/* Textos Principales del Header */
 header .textos-header {
   display: flex;
   height: 390px;
@@ -210,6 +225,7 @@ header .textos-header {
   text-align: center;
 }
 
+/* Titulo Principal Header */
 .textos-header h1 {
   font-size: 50px;
   font-family: Anders;
@@ -217,6 +233,7 @@ header .textos-header {
   margin: 2px;
 }
 
+/* Titulo Segundario del Header */
 .textos-header h2 {
   font-size: 22px;
   font-weight: 300;
@@ -225,25 +242,34 @@ header .textos-header {
   color: #fff;
 }
 
+/* Wales o Olas de la Pagina usada para Saltos de Contenido Position Abajo */
 .wave {
   position: absolute;
   bottom: 0;
   width: 100%;
 }
 
+/* Wales o Olas de la Pagina usada para Saltos de Contenido Position Arriba */
+.wave2 {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
 
-/*-------------------------------*/
-/*Area de Producto Inicio Pagina*/
-/*-----------------------------*/
 
+/* -------------------------------------- */
+/*--Pequeña Presentacion de Productos en el Index--*/
+/* Contenedor de los Productos del Index Dimensiones */
 main .sobre-nosotros {
   padding: 30px 0 60px 0;
 }
 
-.fondo{
+/* Fondo de los Contenedores de Prodcutos Index */
+.fondo {
   background-color: #f2f2f2;
 }
 
+/* Contenedor de Productos Index Img/Enlaces/Info */
 .contenedor-sobre-nosotros {
   display: flex;
   justify-content: space-evenly;
@@ -257,18 +283,22 @@ main .sobre-nosotros {
   color: #ffffff;
 }
 
+/* Efecto de Imagenes de Productos Index */
 .contenedor-sobre-nosotros img:hover {
   transform: scale(1.02);
 }
 
+/* Dimensiones de Img para Productos del Index */
 .imagen-about-us {
   width: 48%;
 }
 
+/* Dimensiones de los Textos de Productos del Index */
 .sobre-nosotros .contenido-textos {
   width: 48%;
 }
 
+/* Titulos Principales de Productos Index */
 .contenido-textos h3 {
   color: #fff;
   margin-bottom: 15px;
@@ -277,6 +307,7 @@ main .sobre-nosotros {
   border-radius: 200px;
 }
 
+/* Ciruclo con Numero de Prodcutos Index */
 .contenido-textos h3 span {
   background: rgba(0, 128, 255, 0.808);
   color: #fff;
@@ -290,6 +321,7 @@ main .sobre-nosotros {
   margin-right: 5px;
 }
 
+/* Titulos Segundarios y Enlaces de Productos Index */
 .contenido-textos p,
 a {
   padding: 0px 0px 30px 15px;
@@ -302,19 +334,21 @@ a {
   color: #070606;
 }
 
+/* Color del Enlace de Prodcutos Index */
 .contenido-textos a {
   color: rgba(0, 128, 255, 0.808);
 }
 
-/*--------------------------*/
-/*Area de Ofrecer Servicios*/
-/*------------------------*/
 
+/* ------------------------------------------------- */
+/*--Ofrecer los Servicios de Tempus Index/Usuarios--*/
+/* Contenedor y Fondo de los Servicios Tempus */
 .about-services {
   padding-bottom: 20px;
   background-color: #ffffff;
 }
 
+/* Dimensiones/Position/Fondo.. el Contenedor de Servicios Tempus */
 .servicio-cont {
   display: flex;
   justify-content: space-between;
@@ -329,6 +363,7 @@ a {
   padding: 12px;
 }
 
+/* Contenedor de Cada Servicio Tempus Img/Textos/Enlaces */
 .servicio-ind {
   width: 32%;
   font-size: 15px;
@@ -338,15 +373,18 @@ a {
   color: rgba(0, 128, 255, 0.5);
 }
 
+/* Img de Servicios Tempus */
 .servicio-ind img {
   width: 75%;
 }
 
+/* Titulo Principal de cada Servicio de Servicios Tempus */
 .servicio-ind h3 {
   margin: 10px;
   padding: 4px;
 }
 
+/* Titulo Segundario/Enlaces de cada Servicio de Servicios Tempus */
 .servicio-ind p,
 a {
   text-decoration: none;
@@ -358,6 +396,7 @@ a {
   font-family: Finlandica-Italic-VariableFont_wght;
 }
 
+/* Efecto de Enlaces de Servicios Tempus */
 .servicio-ind a:hover {
   -webkit-transform: scale(1.3);
   transform: scale(1.3);
@@ -365,37 +404,9 @@ a {
 }
 
 
-@media screen and (max-width:900px) {
-  header {
-    background-position: center;
-  }
-
-  /* servicios */
-
-  .servicio-cont {
-    justify-content: center;
-    flex-direction: column;
-  }
-
-  .servicio-ind {
-    width: 100%;
-    text-align: center;
-  }
-
-  .servicio-ind:nth-child(1),
-  .servicio-ind:nth-child(2) {
-    margin-bottom: 60px;
-  }
-
-  .servicio-cont-image img {
-    width: 50%;
-  }
-}
-
-/*----------------*/
-/*Area del Footer*/
-/*--------------*/
-
+/* ------------------------------------------------- */
+/*--Parte Final de la Pagina Footer--*/
+/* Contenedor Principal del Footer Position/Fondo */
 footer {
   background: #413e41;
   padding: 60px 0 30px 0;
@@ -403,6 +414,7 @@ footer {
   overflow: hidden;
 }
 
+/* Contenedor Segundario del Footer */
 .contenedor-footer {
   display: flex;
   width: 90%;
@@ -412,12 +424,14 @@ footer {
   border-bottom: 1px solid #ccc;
 }
 
+/* Contenedor usado para Todos los Sectores del Footer */
 .content-foo {
   text-align: center;
   font-family: Lugrasimo-Regular;
   font-size: 15px;
 }
 
+/* Titulos/Enlaces del Footer */
 .content-foo h4 {
   color: #f2f2f2;
   border-bottom: 3px solid rgba(0, 128, 255, 0.5);
@@ -425,10 +439,12 @@ footer {
   margin-bottom: 10px;
 }
 
+/* Titulos Segundarios del Footer */
 .content-foo p {
   color: #f2f2f2;
 }
 
+/* Titulo Final del Footer Empresa y Derechos Autor */
 .titulo-final {
   text-align: center;
   font-size: 16px;
@@ -437,26 +453,24 @@ footer {
   font-family: Anders;
 }
 
+/* Enlaces del Footer */
 .content-foo a {
   text-decoration: none;
   color: #fff;
   padding: 5px;
 }
 
+/* Boton de Iniciar Sesion del Footer */
 .content-foo .enlaces a {
+  background-color: rgba(0, 128, 255, 0.5);
+  padding: 15px 25px;
   text-decoration: none;
   color: #fff;
   font-family: Lugrasimo-Regular;
   font-size: 16px;
 }
 
-.content-foo .enlaces a {
-  background-color: rgba(0, 128, 255, 0.5);
-  color: white;
-  padding: 15px 25px;
-  text-decoration: none;
-}
-
+/* Efecto para el Boton de Inicio de Sesion del Footer */
 .content-foo .enlaces a:hover {
   background-color: #1a73cc;
   padding: 15px 25px;
@@ -465,6 +479,7 @@ footer {
   color: white;
 }
 
+/* Efecto para los Enlaces del Footer */
 .content-foo a:hover {
   -webkit-transform: scale(1.3);
   transform: scale(1.3);
@@ -472,80 +487,83 @@ footer {
   padding: 5px;
 }
 
-.wave2 {
-  position: relative;
-  bottom: 0;
-  width: 100%;
-}
 
-/*-----------------------------------*/
-/*Area de Todo Inicio, Menu y Footer*/
-/*---------------------------------*/
-
+/* ------------------------------------------------- */
+/*--Mas Importante para Adaptar a Moviles y Tables--*/
+/* Medida N°1 Moviles */
 @media screen and (max-width:900px) {
+
+  /* Position el Fondo del Header */
   header {
     background-position: center;
   }
 
+  /* Contendor Principal de Servicios Tempus Ajustar Servicios */
+  .servicio-cont {
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  /* Ajustar para Adaptar a Moviles Porductos Index */
   .contenedor-sobre-nosotros {
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
 
+  /* Dimensiones para Productos Index Solo Enlaces/Info */
   .sobre-nosotros .contenido-textos {
     width: 90%;
   }
 
+  /* Tamaño de la Img en los Productos Index */
   .imagen-about-us {
     width: 90%;
   }
 
+  /* Dimensiones y Tamaño para el Mapa en Movil */
   .ubicacion-mapa {
     padding: 12px;
     margin: 20px;
   }
 
-  /* Galeria */
-
-  .imagen-port {
-    width: 44%;
-  }
-
-  /* servicios */
-
-  .servicio-cont {
-    justify-content: center;
-    flex-direction: column;
-  }
-
+  /* Contendor Segundario de Servicios Tempus Ajustar cada Servicio */
   .servicio-ind {
     width: 100%;
     text-align: center;
   }
 
+  /* Agarra los Hermanos del Contenedor de cada Servicio de Servicios Tempus */
   .servicio-ind:nth-child(1),
   .servicio-ind:nth-child(2) {
     margin-bottom: 60px;
   }
 
+  /* Ajusta las Imagenes de Servicios Tempus */
   .servicio-cont-image img {
     width: 50%;
     padding: 12px;
   }
 }
 
+
+/* ------------------------------------------------- */
+/*--Mas Importante para Adaptar a Moviles y Tables--*/
+/* Medida N°2 Moviles */
 @media screen and (max-width:600px) {
+  /* Adapta Tamaño Pantalla de Navegacion */
   .nav__menu {
     display: block;
   }
 
+  /* Adaptar los Enlaces a Moviles */
   .nav__link--menu a {
     border-bottom: 3px solid rgba(0, 128, 255, 0.5);
     padding-bottom: 5px;
     margin-bottom: 10px;
   }
 
+  /* Adaptar la Barra de Navegacion a Moviles */
   .nav__link--menu {
     position: fixed;
     background-color: #413e41;
@@ -565,12 +583,15 @@ footer {
     transition: .7s opacity;
   }
 
+  /* Animacion del Nav desde ul */
+  /* Anmacion al Js Acciones */
   .nav__link--show {
     --show: block;
     opacity: 1;
     pointer-events: unset;
   }
 
+  /* Opcion o Img de Salir de la Barra de Navegacion */
   .nav__close {
     position: absolute;
     top: 30px;
@@ -579,53 +600,53 @@ footer {
     cursor: pointer;
   }
 
+  /* Ajuste y Acomodo del Titulo Principal de la Pagina */
   .textos-header h1 {
     font-size: 28px;
     padding: 1px;
   }
 
+  /* Ajuste y Acomodo del Titulo Segundario de la Pagina */
   .textos-header h2 {
     font-size: 16px;
   }
 
-  /* ABOUT US */
-
+  /* Ajuste de las Imagenes de Productos Index */
   .imagen-about-us {
     margin-bottom: 60px;
     width: 99%;
   }
 
-  .imagen-about-ubicacion {
-    margin-bottom: 60px;
-    width: 99%;
-  }
-
+  /* Ajuste de los Titulos/Enlaces/Info de Productos Index */
   .sobre-nosotros .contenido-textos {
     width: 95%;
   }
 
-  /* Footer */
-
+  /* Ajuste del Contenedor Mayor del Footer */
   .contenedor-footer {
     flex-direction: column;
     border: none;
   }
 
+  /* Ajuste del Contenedor para Cada Categoria del Footer */
   .content-foo {
     margin-bottom: 20px;
     text-align: center;
   }
 
+  /* Ajuste de los Titlos Principales del Footer */
   .content-foo h4 {
     border: none;
   }
 
+  /* Ajuste de la Info/Enlaces del Footer */
   .content-foo p {
     color: #f2f2f2;
     border-bottom: 1px solid rgba(0, 128, 255, 0.808);
     padding-bottom: 20px;
   }
 
+  /* Ajuste del Titulo Principal y Final del Footer */
   .titulo-final {
     font-size: 20px;
   }

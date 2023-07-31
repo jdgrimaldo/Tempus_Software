@@ -1,4 +1,4 @@
-/*Salir de Sesion del Sistema*/
+/* Sistema Encargado de Salir del Sistema */
 const user = JSON.parse(localStorage.getItem('login_success')) || false
 if(!user){
 }

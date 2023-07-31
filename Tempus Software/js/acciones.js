@@ -1,4 +1,4 @@
-/*Menu Nav Accion de Moviles*/
+/* Acciones para Adaptar el Menu para Moviles */
 (function () {
     const openButton = document.querySelector('.nav__menu');
     const menu = document.querySelector('.nav__link');
@@ -13,7 +13,7 @@
     });
 })();
 
-/*Catalogo De Laptos y Productos*/
+/* Acciones para el Catalogo */
 
 function toggleDescripcion(id) {
     var descripcion = document.querySelector(`#${id}`);

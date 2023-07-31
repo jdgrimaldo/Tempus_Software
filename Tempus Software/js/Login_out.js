@@ -1,11 +1,4 @@
-<<<<<<< HEAD
-/* Sistema Encargado de Salir del Sistema */
-const user = JSON.parse(localStorage.getItem('login_success')) || false
-if(!user){
-}
-=======
 /*Salir de Sesion del Sistema*/
->>>>>>> 77fb856cececc0e3dd2a9f15ff9495ef301bb732
 
 //Obtener el usuario almacenado en la base de datos local:
 const user = JSON.parse(localStorage.getItem('login_success')) || false

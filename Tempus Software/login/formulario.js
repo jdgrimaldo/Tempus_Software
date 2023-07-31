@@ -1,6 +1,8 @@
+//Obtener los elementos del formulario y asignarlos a variables:
 const formulario = document.getElementById("formulario__register")
 const inputs = document.querySelectorAll("#formulario__register input")
 
+//Definir expresiones regulares para validar los campos del formulario:
 const expresiones = {
 	usuario: /^[a-zA-Z0-9\_\-]{4,16}$/, // Letras, numeros, guion y guion_bajo
 	nombre: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
@@ -9,6 +11,7 @@ const expresiones = {
 	telefono: /^\d{7,14}$/ // 7 a 14 numeros.
 }
 
+//Crear un objeto que almacena el estado de validación de los campos del formulario:
 const campos = {
 	usuario: false,
 	nombre: false,
@@ -17,6 +20,7 @@ const campos = {
 	telefono: false
 }
 
+//Crear una función que valida el formulario completo cuando se presiona una tecla o se pierde el foco en un campo:
 const validarFormulario = (e) => {
 	switch (e.target.name) {
 		case "usuario":
@@ -37,8 +41,10 @@ const validarFormulario = (e) => {
 	}
 }
 
+//Crear una función que valida cada campo del formulario según la expresión regular correspondiente:
 const validarCampo = (expresion, input, campo) => {
 	if (expresion.test(input.value)) {
+		// si el campo es válido, se agregan clases CSS para indicar que es correcto
 		document.getElementById(`grupo__${campo}`).classList.remove("formulario__grupo-incorrecto");
 		document.getElementById(`grupo__${campo}`).classList.add("formulario__grupo-correcto");
 		document.querySelector(`#grupo__${campo} i`).classList.add("fa-check-circle");
@@ -46,6 +52,7 @@ const validarCampo = (expresion, input, campo) => {
 		document.querySelector(`#grupo__${campo} .formulario__input-error`).classList.remove("formulario__input-error-activo");
 		campos[campo] = true;
 	} else {
+		// si el campo es inválido, se agregan clases CSS para indicar que es incorrecto
 		document.getElementById(`grupo__${campo}`).classList.add("formulario__grupo-incorrecto");
 		document.getElementById(`grupo__${campo}`).classList.remove("formulario__grupo-correcto");
 		document.querySelector(`#grupo__${campo} i`).classList.add("fa-times-circle");
@@ -55,11 +62,15 @@ const validarCampo = (expresion, input, campo) => {
 	}
 }
 
+//Asignar los eventos keyup y blur a cada campo del formulario para validarlos en tiempo real:
 inputs.forEach((input) => {
 	input.addEventListener("keyup", validarFormulario);
 	input.addEventListener("blur", validarFormulario);
 });
 
+//En la función que procesa el formulario, se comprueba que los campos obligatorios no estén vacíos y que el usuario 
+//no esté ya registrado en la base de datos local. Si todo es correcto, se guarda el nuevo usuario en la base de 
+//datos local y se redirige a la página de inicio de sesión:
 const formulario__register = document.querySelector('#formulario__register')
 formulario__register.addEventListener('submit', (e) => {
 	e.preventDefault()
@@ -83,6 +94,7 @@ formulario__register.addEventListener('submit', (e) => {
 	localStorage.setItem('users', JSON.stringify(Users));
 
 	if (!isUserRegistered) {
+		// si el usuario no estaba registrado previamente, se muestra un mensaje de éxito
 		document.getElementById("formulario__mensaje-exito").classList.add("formulario__mensaje-exito-activo");
 		setTimeout(() => {
 			document.getElementById("formulario__mensaje-exito").classList.remove("formulario__mensaje-exito-activo");
@@ -92,10 +104,12 @@ formulario__register.addEventListener('submit', (e) => {
 	window.location.href = 'login.html';
 });
 
+//Crear una función que se encarga de procesar el formulario cuando se envía:
 formulario.addEventListener("submit", (e) => {
 	e.preventDefault();
 
 	const terminos = document.getElementById("terminos");
+	// si todos los campos son válidos y se ha marcado el checkbox de términos, se procesa el formulario
 	if (campos.usuario && campos.nombre && campos.correo && campos.password && campos.telefono && terminos.checked) {
 		formulario.reset();
 
@@ -108,6 +122,7 @@ formulario.addEventListener("submit", (e) => {
 			icono.classList.remove("formulario__grupo-correcto");
 		});
 	} else {
+		// si algún campo es inválido o no se ha marcado el checkbox, se muestra un mensaje de error
 		document.getElementById("formulario__mensaje").classList.add("formulario__mensaje-activo");
 		setTimeout(() => {
 			document.getElementById("formulario__mensaje").classList.remove("formulario__mensaje-activo");
@@ -115,6 +130,7 @@ formulario.addEventListener("submit", (e) => {
 	}
 });
 
+//Finalmente, se crea una función que procesa el formulario de inicio de sesión y comprueba que el usuario y la contraseña sean válidos:
 const formulario__login = document.querySelector('#formulario__login')
 formulario__login.addEventListener('submit', (e) => {
 	e.preventDefault()

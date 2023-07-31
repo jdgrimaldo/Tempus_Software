@@ -13,8 +13,8 @@
     });
 })();
 
-/* Acciones para el Catalogo */
 
+/* Aparicion de Info/Texto a los Productos del Catalogo */
 function toggleDescripcion(id) {
     var descripcion = document.querySelector(`#${id}`);
     descripcion.classList.toggle('visible');

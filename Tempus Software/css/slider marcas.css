@@ -1,17 +1,24 @@
+/* ------------------------------------------------- */
+/*--Slider para lo que son las Marcas en Tendencia--*/
+/* Contenedor del Slider Marcas Ajuste/Altura/Ancho */
 .slider {
   width: 100%;
   height: auto;
   margin: auto;
   overflow: hidden;
 }
-.fondo-slider{
+
+/* Fondo para el Slider de Marcas en Tendencia */
+.fondo-slider {
   background-color: #ffffff;
 }
 
+/* Distancias entre Img del Slider Marcas */
 .slide img {
   padding: 6px;
 }
 
+/* Movimientos/Animaciones del Slider Marcas */
 .slider .slide-track {
   display: flex;
   animation: movimiento 16s linear infinite;
@@ -20,14 +27,17 @@
   text-align: justify;
 }
 
+/* Dimensiones para el Slider Marcas */
 .slider .slide {
   width: 200px;
 }
 
+/* Dimensiones para Cada Img del Slider Marcas */
 .slider .slide img {
   width: 100%;
 }
 
+/* Animacion de Movimiento Automatico del Slider Marcas */
 @keyframes movimiento {
   0% {
     -webkit-transform: translateX(0);
@@ -40,13 +50,15 @@
   }
 }
 
+/* Adaptar el Slider Marcas a Moviles */
 @media screen and (max-width:500px) {
-
+  /* Movimientos/Animaciones del Slider Marcas a Movlies */
   .slider .slide-track {
     animation: movimiento 20s linear infinite;
     -webkit-animation: movimiento 20s linear infinite;
   }
 
+  /* Adaptar las Animacion de Movimiento Automatico del Slider Marcas a Moviles */
   @keyframes movimiento {
     0% {
       -webkit-transform: translateX(0);

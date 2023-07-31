@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
 
 <head>
@@ -10,6 +10,7 @@
   <title>Iniciar Sesion</title>
   <link rel="stylesheet" href="../css/normalize.css">
   <link rel="stylesheet" href="estilo_log_reg.css" />
+  <link rel="stylesheet" href="../css/aos.css">
   <link rel="stylesheet" href="../css/estilos.css">
   <link rel="stylesheet" type="text/css" href="../css/fuentes.css" />
   <link rel="stylesheet" href="../iconos/fontawesome/css/all.css">
@@ -27,7 +28,7 @@
 <body>
   <main>
 
-    <div class="contenedor__todo">
+    <div class="contenedor__todo" data-aos="zoom-in-up">
       <div class="caja__trasera">
         <div class="caja__trasera-login">
           <h3>¿Ya tienes una cuenta?</h3>
@@ -130,7 +131,9 @@
   </main>
   <script src="main.js"></script>
   <script src="formulario.js"></script>
+  <script src="../js/aos.js"></script>
   <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+  <script>  AOS.init();  </script>
   </main>
   <br><br>
 </body>

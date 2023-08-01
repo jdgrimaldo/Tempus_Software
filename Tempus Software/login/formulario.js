@@ -71,16 +71,17 @@ inputs.forEach((input) => {
 //En la función que procesa el formulario, se comprueba que los campos obligatorios no estén vacíos y que el usuario 
 //no esté ya registrado en la base de datos local. Si todo es correcto, se guarda el nuevo usuario en la base de 
 //datos local y se redirige a la página de inicio de sesión:
-const formulario__register = document.querySelector('#formulario__register')
+const formulario__register = document.querySelector('#formulario__register');
 formulario__register.addEventListener('submit', (e) => {
-	e.preventDefault()
+	e.preventDefault();
 	const usuario = document.querySelector('#usuario').value.trim();
 	const correo = document.querySelector('#correo').value.trim();
 	const telefono = document.querySelector('#telefono').value.trim();
 	const password = document.querySelector('#password').value.trim();
+	const terminos = document.querySelector('#terminos');
 
-	if (usuario === "" || correo === "" || telefono === "" || password === "") {
-		return alert('Los campos no pueden estar vacíos!');
+	if (usuario === "" || correo === "" || telefono === "" || password === "" || !terminos.checked) {
+		return alert('Debes completar todos los campos y aceptar los términos y condiciones!');
 	}
 
 	const Users = JSON.parse(localStorage.getItem('users')) || [];

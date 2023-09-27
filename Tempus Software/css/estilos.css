@@ -32,7 +32,6 @@ body {
   }
 }
 
-
 /* -------------------------- */
 /*--Area de Titulos y Demas--*/
 /* Contenedor de Contenido de la Pagina */
@@ -63,7 +62,6 @@ body {
   align-items: center;
   display: flex;
 }
-
 
 /* --------------------------------------------- */
 /*--Efectos para la Pagina Img/Enlaces/Titulos--*/
@@ -101,7 +99,6 @@ img:hover {
   filter: brightness(0.8);
 }
 
-
 /* -------------------------------------- */
 /*--Barra de Navegacion y Textos Header--*/
 /* Header Posicion/Tamaño/Img */
@@ -110,7 +107,8 @@ header {
   height: 760px;
   min-height: 600px;
   max-height: 800px;
-  background: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url(../imagenes/laptos/lapto3.jpg);
+  background: linear-gradient(180deg, #0000008c 0%, #0000008c 100%),
+    url(../imagenes/laptos/lapto3.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -154,7 +152,7 @@ header {
 .nav__links {
   color: #fff;
   text-decoration: none;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 /* Menu Para Moviles Solo para La Img Menu */
@@ -173,10 +171,8 @@ header {
 }
 
 /* Para la Parte de la Opcion a Desplegar */
-.nav__items_conteiner li,
-li a {
+.nav__items_conteiner a {
   color: #fff;
-  text-decoration: none;
   align-items: center;
   margin-right: 10px;
 }
@@ -237,7 +233,7 @@ header .textos-header {
 .textos-header h2 {
   font-size: 22px;
   font-weight: 300;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   padding: 14px;
   color: #fff;
 }
@@ -255,7 +251,6 @@ header .textos-header {
   bottom: 0;
   width: 100%;
 }
-
 
 /* -------------------------------------- */
 /*--Pequeña Presentacion de Productos en el Index--*/
@@ -277,7 +272,7 @@ main .sobre-nosotros {
   max-height: none;
   font-family: Finlandica-Italic-VariableFont_wght;
   background-color: #ffffff;
-  border: 2px solid #46A2FD;
+  border: 2px solid #46a2fd;
   border-radius: 10px;
   padding: 12px;
   color: #ffffff;
@@ -303,7 +298,7 @@ main .sobre-nosotros {
   color: #fff;
   margin-bottom: 15px;
   font-family: Lugrasimo-Regular;
-  background: #46A2FD;
+  background: #46a2fd;
   border-radius: 200px;
 }
 
@@ -317,7 +312,7 @@ main .sobre-nosotros {
   width: 30px;
   height: 30px;
   padding: 2px;
-  box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
   margin-right: 5px;
 }
 
@@ -339,7 +334,6 @@ a {
   color: rgba(0, 128, 255, 0.808);
 }
 
-
 /* ------------------------------------------------- */
 /*--Ofrecer los Servicios de Tempus Index/Usuarios--*/
 /* Contenedor y Fondo de los Servicios Tempus */
@@ -358,7 +352,7 @@ a {
   max-height: none;
   font-family: Finlandica-Italic-VariableFont_wght;
   background-color: #ffffff;
-  border: 2px solid #46A2FD;
+  border: 2px solid #46a2fd;
   border-radius: 10px;
   padding: 12px;
 }
@@ -402,7 +396,6 @@ a {
   transform: scale(1.3);
   color: rgba(202, 30, 73, 0.877);
 }
-
 
 /* ------------------------------------------------- */
 /*--Parte Final de la Pagina Footer--*/
@@ -487,12 +480,10 @@ footer {
   padding: 5px;
 }
 
-
 /* ------------------------------------------------- */
 /*--Mas Importante para Adaptar a Moviles y Tables--*/
 /* Medida N°1 Moviles */
-@media screen and (max-width:900px) {
-
+@media screen and (max-width: 900px) {
   /* Position el Fondo del Header */
   header {
     background-position: center;
@@ -546,11 +537,10 @@ footer {
   }
 }
 
-
 /* ------------------------------------------------- */
 /*--Mas Importante para Adaptar a Moviles y Tables--*/
 /* Medida N°2 Moviles */
-@media screen and (max-width:600px) {
+@media screen and (max-width: 600px) {
   /* Adapta Tamaño Pantalla de Navegacion */
   .nav__menu {
     display: block;
@@ -580,7 +570,7 @@ footer {
     z-index: 100;
     opacity: 0;
     pointer-events: none;
-    transition: .7s opacity;
+    transition: 0.7s opacity;
   }
 
   /* Animacion del Nav desde ul */

@@ -7,7 +7,7 @@ body{
 }
 
 h1.titulo {
-  color: rgba(0, 128, 255, 0.5);
+  color: #1d9dcc;
   font-family: Lugrasimo-Regular;
   font-size: 30px;
   margin-bottom: 30px;
@@ -16,7 +16,7 @@ h1.titulo {
 h1.texto-final {
   font-size: 20px;
   margin-bottom: 20px;
-  color: rgba(0, 128, 255, 0.5);
+  color: #1d9dcc;
   font-family: Lugrasimo-Regular;
   text-align: center;
 }
@@ -36,7 +36,7 @@ h1.texto-final {
   transition: all 0.3s ease;
   margin: 2px;
 
-  border: 1px solid #46A2FD;
+  border: 1px solid #1d9dcc;
   border-radius: 10px;
 }
 
@@ -125,7 +125,7 @@ h3.nombre {
   h1.texto-final {
     font-size: 20px;
     margin-bottom: 20px;
-    color: rgba(0, 128, 255, 0.5);
+    color: #1d9dcc;
     font-family: Lugrasimo-Regular;
   }
 
@@ -145,7 +145,7 @@ h3.nombre {
     font-family: Finlandica-Italic-VariableFont_wght;
     opacity: 1;
     transition: opacity 300ms, max-height 300ms;
-    background-color: rgb(10, 129, 165);
+    background-color: #1d9dcc;
     border-radius: 10px;
     padding: 10px;
     color: #ffffff;

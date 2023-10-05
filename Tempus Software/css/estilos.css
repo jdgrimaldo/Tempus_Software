@@ -52,17 +52,6 @@ body {
   margin-bottom: 60px;
 }
 
-/* Titulo Segundario de Usuarios */
-.titulo-usuario {
-  color: rgba(0, 128, 255, 0.808);
-  font-size: 30px;
-  font-family: Lugrasimo-Regular;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-}
-
 /* --------------------------------------------- */
 /*--Efectos para la Pagina Img/Enlaces/Titulos--*/
 /* Efecto Barra de Navegacion */
@@ -181,8 +170,8 @@ header {
 .nav__items_conteiner a,
 summary {
   color: #fff;
-  align-items: center;
-  margin-right: 10px;
+  margin-right: 20px;
+  font-size: 15px;
 }
 
 /* Contenedor para las Opciones Desplegables */
@@ -203,7 +192,6 @@ summary {
   font-size: 15px;
   display: block;
   color: #fff;
-  padding: 16px;
   text-decoration: none;
 }
 
@@ -554,10 +542,14 @@ footer {
     display: block;
   }
 
+  .nav__link{
+    overflow: scroll;
+  }
+
   /* Adaptar los Enlaces a Moviles */
-  .nav__link--menu a {
-    border-bottom: 3px solid rgba(0, 128, 255, 0.5);
-    padding-bottom: 5px;
+  .nav__link--menu a, summary {
+    border-bottom: 3.5px solid rgba(0, 128, 255, 0.5);
+    padding-bottom: 1px;
     margin-bottom: 10px;
   }
 
@@ -567,9 +559,10 @@ footer {
     background-color: #413e41;
     top: 0;
     left: 0;
-    margin-left: 40%;
-    height: 80%;
-    width: 60%;
+    margin-top: 1.5%;
+    margin-left: 53.5%;
+    height: 90%;
+    width: 46%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;

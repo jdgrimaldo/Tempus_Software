@@ -21,7 +21,7 @@ logout.addEventListener('click', ()=>{
 const login_success = JSON.parse(localStorage.getItem('login_success'))
 if (login_success) {
 const mensajeBienvenida = document.querySelector('#mensaje-bienvenida')
-mensajeBienvenida.innerText = `Bienvenido, ${login_success.usuario}!`;
+mensajeBienvenida.innerText = `${login_success.usuario}!`;
 }
 
 //Obtener el botón de cerrar sesión y asignar un evento click que borra el usuario almacenado de la base de 

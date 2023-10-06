@@ -23,12 +23,3 @@
         menu.classList.remove('nav__link--show');
     });
 })();
-
-
-/* --------------------------------------------- */
-/*--Acciones para el Catalogo de Productos--*/
-/* Aparicion de Info/Texto a los Productos del Catalogo */
-function toggleDescripcion(id) {
-    var descripcion = document.querySelector(`#${id}`);
-    descripcion.classList.toggle('visible');
-}

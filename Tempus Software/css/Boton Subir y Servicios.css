@@ -93,6 +93,10 @@
     text-align: center;
 }
 
+.member-container summary{
+  display: flex;
+}
+
 .button{
     text-decoration: none;
     color: white;

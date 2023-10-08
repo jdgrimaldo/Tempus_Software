@@ -40,19 +40,17 @@ body {
     border-bottom: 1px solid #fff;
 }
 
-
-.login-logo img {
-    margin-right: 16px;
-    padding-left: 6px;
-    padding-right: 6px;
-    height: 100px;
-    width: 160px;
+.nav__title {
+    height: 117px;
+    width: 190px;
     float: left;
-}
+    margin-left: 40px;
+  }
 
-.login-logo img:hover {
-    filter: blur(2px);
-}
+  img:hover {
+    filter: brightness(0.8);
+  }
+  
 
 /*-----*/
 
@@ -279,6 +277,14 @@ main {
     cursor: pointer;
     transition: .1s ease all;
 }
+
+.formulario__grupo a {
+    font-weight: 100;
+    font-size: 17px;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    color: #222020;
+  }
 
 .formulario__mensaje-exito {
     font-size: 14px;

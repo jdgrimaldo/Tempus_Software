@@ -83,12 +83,6 @@ nav summary:hover {
   color: rgba(202, 30, 73, 0.877);
 }
 
-/* Efecto Titulo Segundario para Usuario */
-.titulo-usuario:hover {
-  -webkit-transform: scale(0.3);
-  transform: scale(1);
-  color: rgba(202, 30, 73, 0.877);
-}
 
 /* Efecto para las Img */
 img:hover {
@@ -194,6 +188,15 @@ summary {
   display: block;
   color: #fff;
   text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  transition: 0.2s ease;
+}
+
+.nav__items_categorias #logout {
+  color: #fff;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  transition: 0.2s ease;
 }
 
 /* Img del Menu Desplegable Abrir */
@@ -314,8 +317,7 @@ main .sobre-nosotros {
 }
 
 /* Titulos Segundarios y Enlaces de Productos Index */
-.contenido-textos p,
-a {
+.contenido-textos a, p {
   padding: 0px 0px 30px 15px;
   font-weight: 300;
   text-align: justify;
@@ -326,10 +328,30 @@ a {
   color: #070606;
 }
 
-/* Color del Enlace de Prodcutos Index */
-.contenido-textos a {
-  color: rgba(0, 128, 255, 0.808);
+
+.contenedor-compra{
+  padding: 15px 1px 6px 1px;
 }
+
+.contenedor-compra a{
+  color: white;
+  font-weight: 500;
+  font-size: 18px;
+  text-decoration: none;
+  padding: 10px 28px;
+  border-radius: 40px;
+  background-color:  #46a2fd;
+  transition: 0.6s;
+}
+
+.compra:hover{
+  background-color: rgba(0, 128, 255, 0.808);
+}
+
+.contenedor-compra a:hover{
+  color: #48494b;
+}
+
 
 /* ------------------------------------------------- */
 /*--Ofrecer los Servicios de Tempus Index/Usuarios--*/

@@ -28,6 +28,11 @@ h1.texto-final {
   flex-wrap: wrap;
 }
 
+.catalogo p{
+  color: #fff;
+  text-align: center;
+}
+
 .producto {
   width: 30.33%;
   padding: 9px;
@@ -70,6 +75,12 @@ h1.texto-final {
   text-align: center;
 }
 
+.info{
+    color: #fff;
+    text-decoration: none;
+    font-family: Finlandica-Italic-VariableFont_wght;
+}
+
 h3.nombre {
   color: rgba(0, 128, 255, 0.5);
   font-family: Lugrasimo-Regular;
@@ -91,6 +102,14 @@ h3.nombre {
   transition: opacity 0.3s ease;
 }
 
+.title-lapto p{
+  color: #201f1f;
+  font-family: Lugrasimo-Regular;
+  opacity: 1;
+  font-size: 14px;
+  text-align: center;
+ }
+
 .producto:hover .toca {
   opacity: 0.8;
 }
@@ -102,6 +121,7 @@ h3.nombre {
   }
   .descripcion p.caracteristicas {
     font-weight: bold;
+    color: #fff;
   }
   .descripcion2.visible {
     opacity: 1;
@@ -165,7 +185,7 @@ h3.nombre {
   .toca {
     font-family: Lugrasimo-Regular;
     background-color: rgba(0, 0, 0, 0);
-    color: #ffffff00;
+    color: #f0000000;
     padding: 10px;
     font-size: 14px;
     font-weight: bold;
@@ -175,7 +195,7 @@ h3.nombre {
     opacity: 1;
   }
 
-  .aparicion {
+  .title-lapto p{
     font-family: Lugrasimo-Regular;
     opacity: 1;
     font-size: 14px;
@@ -191,12 +211,11 @@ h3.nombre {
   
 }
 
-.aparicion {
+.title-lapto p{
   display: block;
   font-family: Lugrasimo-Regular;
   opacity: 1;
   font-size: 14px;
-  color: #faf4f4;
   text-align: center;
 }
 .aparicion2 {

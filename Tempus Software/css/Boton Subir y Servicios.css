@@ -6,6 +6,7 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    padding: 70px 0px 0px 0px;
 }
 
 .member-container{
@@ -57,14 +58,30 @@
     background-size: cover;
 }
 
-.member-container:nth-of-type(1)::after{
-    background-image: url(../imagenes/inicio/undraw_shopping_bags_1i4k.svg);
+#contenedor1::after{
+    background-image: url(../imagenes/inicio/undraw_pay_online_re_aqe6.svg);
+    border: 1px rgba(160, 160, 160, 0.4) solid;
 }
-.member-container:nth-of-type(2)::after{
+#contenedor2::after{
     background-image: url(../imagenes/inicio/undraw_product_explainer_8jbm.svg);
+    border: 1px rgba(160, 160, 160, 0.4) solid;
 }
-.member-container:nth-of-type(3)::after{
-    background-image: url(../imagenes/inicio/undraw_services_re_hu5n.svg);
+#contenedor3::after{
+    background-image: url(../imagenes/inicio/undraw_access_account_re_8spm.svg);
+    border: 1px rgba(160, 160, 160, 0.4) solid;
+}
+
+#contenedor4::after{
+  background-image: url(../imagenes/inicio/undraw_pay_online_re_aqe6.svg);
+  border: 1px rgba(160, 160, 160, 0.4) solid;
+}
+#contenedor5::after{
+  background-image: url(../imagenes/inicio/undraw_product_explainer_8jbm.svg);
+  border: 1px rgba(160, 160, 160, 0.4) solid;
+}
+#contenedor6::after{
+  background-image: url(../imagenes/inicio/undraw_services_re_hu5n.svg);
+  border: 1px rgba(160, 160, 160, 0.4) solid;
 }
 
 .member-name{
@@ -191,7 +208,7 @@
 
 
   ::-webkit-scrollbar {
-    width: 12px;
+    width: 7px;
   }
   
   ::-webkit-scrollbar-track {
@@ -200,7 +217,7 @@
   
   ::-webkit-scrollbar-thumb {
     background: #46a2fd;
-    border-radius: 15px;
+    border-radius: 12px;
   }
   
   ::-webkit-scrollbar-thumb:hover {

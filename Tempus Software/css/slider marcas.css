@@ -51,7 +51,7 @@
 }
 
 /* Adaptar el Slider Marcas a Moviles */
-@media screen and (max-width:500px) {
+@media screen and (max-width: 500px) {
   /* Movimientos/Animaciones del Slider Marcas a Movlies */
   .slider .slide-track {
     animation: movimiento 20s linear infinite;
@@ -70,5 +70,4 @@
       transform: translateX(calc(-200px * 10.45));
     }
   }
-
 }

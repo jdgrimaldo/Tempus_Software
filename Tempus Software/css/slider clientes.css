@@ -26,7 +26,7 @@
   background-position: center;
   background-size: cover;
   background-color: #ffffff;
-  border: 2px solid #46A2FD;
+  border: 2px solid #46a2fd;
   color: #ffffff;
 }
 
@@ -56,7 +56,7 @@
 }
 
 /* Declaracion de Imagenes Movil */
-@media screen and (max-width:500px) {
+@media screen and (max-width: 500px) {
   .slide1 {
     background-image: url(../imagenes/slider/cliente1-movil.jpeg);
   }
@@ -80,7 +80,6 @@
   .slide6 {
     background-image: url(../imagenes/slider/cliente6-movil.jpg);
   }
-
 }
 
 /* Animacion Infinita */

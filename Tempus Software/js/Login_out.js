@@ -5,13 +5,13 @@ const user = JSON.parse(localStorage.getItem('login_success')) || false
 
 //Comprobar si hay un usuario almacenado en la base de datos local, y si no lo hay, realizar alguna acción. 
 //En este caso, el código no hace nada si no hay un usuario almacenado:
-if (!user) {
+if(!user){
 } // si no hay un usuario almacenado, no se hace nada
 
 //Obtener el botón de cerrar sesión y asignar un evento click que borra el usuario almacenado de la base de datos local:
 const logout = document.querySelector('#logout')
 
-logout.addEventListener('click', () => {
+logout.addEventListener('click', ()=>{
     alert('Hasta pronto!')
     localStorage.removeItem('login_success')
 })
@@ -20,8 +20,8 @@ logout.addEventListener('click', () => {
 //inicio si el usuario ha iniciado sesión correctamente:
 const login_success = JSON.parse(localStorage.getItem('login_success'))
 if (login_success) {
-    const mensajeBienvenida = document.querySelector('#mensaje-bienvenida')
-    mensajeBienvenida.innerText = `${login_success.usuario}!`;
+const mensajeBienvenida = document.querySelector('#mensaje-bienvenida')
+mensajeBienvenida.innerText = `${login_success.usuario}!`;
 }
 
 //Obtener el botón de cerrar sesión y asignar un evento click que borra el usuario almacenado de la base de 

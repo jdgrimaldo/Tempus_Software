@@ -117,10 +117,13 @@ header {
 
 /* Parte del Logo Nav */
 .nav__title {
-  height: 117px;
-  width: 190px;
-  float: left;
-  margin-left: 40px;
+  width: 135px;
+  height: 60px;
+  margin: 0;
+  padding: 0;
+  position: absolute; /* Posición absoluta para el logotipo */
+  top: 20px; /* Margen superior deseado */
+  left: 20px;
 }
 
 
@@ -567,6 +570,11 @@ footer {
   /* Adapta Tamaño Pantalla de Navegacion */
   .nav__menu {
     display: block;
+  }
+
+  .nav__title{
+    width: 140px;
+    height: 65px;
   }
 
   .nav__link {
